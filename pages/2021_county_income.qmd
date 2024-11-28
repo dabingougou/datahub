@@ -1,34 +1,16 @@
 ---
 title: "How affluent is your county"
-author: [Huibin Chang(mailto: huibin.chang@berkeley.edu)]
+author: ["Huibin Chang <huibin.chang@berkeley.edu>"]
 format: html
 execute:
   echo: false
-meta:
-  meta:
-  - property: og:title
-    content: "Interactive U.S. County Income Map"
-  - property: og:description
-    content: "Explore the interactive map of U.S. counties showing income data."
-  - property: og:image
-    content: "https://dabingougou.github.io/datahub/income_thumbnail.png"
-  - property: og:url
-    content: "https://dabingougou.github.io/datahub/2021_county_income.html"
-  - property: og:type
-    content: "website"
-  - name: twitter:card
-    content: "summary_large_image"
-  - name: twitter:title
-    content: "Interactive U.S. County Income Map"
-  - name: twitter:description
-    content: "Explore the interactive map of U.S. counties showing income data."
-  - name: twitter:image
-    content: "https://dabingougou.github.io/datahub/income_thumbnail.png" 
+include-in-header: 2021_county_income_meta.html
 ---
+
 
 ## Use this map to find out
 
-What's the income level in your county, according to the 2021 US Census (ACS)? Per person annual income is shown in this interactive map. Note that personal income is generally lower than wage due to a portion of the population not earning wage income. Per person annual income is calculated as (for county $i$):
+**What's the income level in your county, according to the 2021 Census?** Per person annual income is shown in this interactive map. Note that personal income is generally lower than wage due to a portion of the population not earning wage income. Per person annual income is calculated as (for county $i$):
 
 $$per\_person\_income_i = \frac{median\_family\_income_{i}}{avg\_family\_size_i}$$
 
@@ -336,8 +318,8 @@ interactive_map <- leaflet(data = census_county_sf) %>%
   )
 
 
-# Save the standalone map to an HTML file
-saveWidget(interactive_map, "../docs/county_income_map.html", selfcontained = TRUE)
+# (optional) Save the standalone map to an HTML file
+# saveWidget(interactive_map, "../docs/county_income_map.html", selfcontained = TRUE)
 
 # Render the map inline in the QMD page
 interactive_map
@@ -345,12 +327,40 @@ interactive_map
 \vspace{10mm}
 
 ## The most and least affluent counties by personal income
-The two tables below show the top and bottom 20 counties in the US ranked by personal income.
-```{r generate_tables, echo=FALSE, message=FALSE, warning=FALSE}
-top_20 <- census_county %>%
+
+The 3 tables below show the most populous, and top and bottom 25 counties in the US ranked by personal income.
+
+### First Table: By Population
+```{r generate_table_populous, echo=FALSE, message=FALSE, warning=FALSE}
+top_30_pop <- census_county %>%
+  arrange(desc(population)) %>%
+  mutate('Population Rank' = row_number()) %>%
+  slice_head(n = 30) %>%
+  select(`Population Rank`, 
+         'County' = NAME, 
+         'Population' = population, 
+         'Median Household Income' = median_household_income,
+         'Per Person Income' = per_person_income) %>%
+   mutate(
+    Population = comma(replace_na(Population, 0)),
+    'Median Household Income' = dollar(replace_na(`Median Household Income`, 0)),
+    'Per Person Income' = dollar(round(`Per Person Income`))
+  )
+
+kable(top_30_pop, caption = "Most populous counties")
+```
+
+
+\vspace{10mm}
+
+### Second Table: Top Income Counties
+```{r generate_table_rich, echo=FALSE, message=FALSE, warning=FALSE}
+top_25 <- census_county %>%
   arrange(desc(per_person_income)) %>%
-  slice_head(n = 20) %>%
-  select('County' = NAME, 
+  mutate('Income Rank' = row_number()) %>%
+  slice_head(n = 25) %>%
+  select(`Income Rank`, 
+         'County' = NAME, 
          'Population' = population, 
          'Median Household Income' = median_household_income,
          'Per Person Income' = per_person_income) %>%
@@ -361,13 +371,20 @@ top_20 <- census_county %>%
   )
 
   
-kable(top_20, caption = "Most affluent counties")
+kable(top_25, caption = "Most affluent counties")
+```
 
-bottom_20 <- census_county %>%
+\vspace{10mm}
+
+### Third Table: Bottom Income Counties
+```{r generate_table_poor, echo=FALSE, message=FALSE, warning=FALSE}
+bottom_25 <- census_county %>%
   filter(!str_detect(NAME, 'Puerto Rico')) %>%
   arrange(per_person_income) %>%
-  slice_head(n = 20) %>%
-  select('County' = NAME, 
+  mutate('Rank From Bottom' = row_number()) %>%
+  slice_head(n = 25) %>%
+  select(`Rank From Bottom`, 
+         'County' = NAME, 
          'Population' = population, 
          'Median Household Income' = median_household_income,
          'Per Person Income' = per_person_income) %>%
@@ -377,7 +394,13 @@ bottom_20 <- census_county %>%
     'Per Person Income' = dollar(round(`Per Person Income`))
   )
 
-kable(bottom_20, caption = "Least affluent counties")
-
+kable(bottom_25, caption = "Least affluent counties")
 ```
-Contact me at [huibin.chang@berkeley.edu](mailto:huibin.chang@berkeley.edu)
+
+
+```{r clean_up, echo=FALSE, message=FALSE, warning=FALSE}
+rm(list=ls())
+```
+Contact me at [huibin.chang@berkeley.edu](mailto:huibin.chang@berkeley.edu). 
+
+[Click here for source code](https://github.com/dabingougou/datahub/blob/main/pages/2021_county_income.qmd)
