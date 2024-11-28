@@ -5,12 +5,25 @@ format: html
 execute:
   echo: false
 meta:
-  og:title: "Interactive U.S. County Income Map"
-  og:description: "Explore the interactive map of U.S. counties showing per-person income data."
-  og:image: "https://dabingougou.github.io/datahub/income_thumbnail.png"
-  og:url: "https://dabingougou.github.io/datahub/county_income_map.html"
-  og:type: "website"
-  twitter:card: "summary_large_image" 
+  meta:
+  - property: og:title
+    content: "Interactive U.S. County Income Map"
+  - property: og:description
+    content: "Explore the interactive map of U.S. counties showing income data."
+  - property: og:image
+    content: "https://dabingougou.github.io/datahub/income_thumbnail.png"
+  - property: og:url
+    content: "https://dabingougou.github.io/datahub/county_income_map.html"
+  - property: og:type
+    content: "website"
+  - name: twitter:card
+    content: "summary_large_image"
+  - name: twitter:title
+    content: "Interactive U.S. County Income Map"
+  - name: twitter:description
+    content: "Explore the interactive map of U.S. counties showing income data."
+  - name: twitter:image
+    content: "https://dabingougou.github.io/datahub/income_thumbnail.png" 
 ---
 
 ## Use this map to find out
