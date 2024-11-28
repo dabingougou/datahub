@@ -1,0 +1,323 @@
+---
+title: "How affluent is your county"
+author: [Huibin Chang(mailto: huibin.chang@berkeley.edu)]
+format: html
+execute:
+  echo: false
+---
+
+What's the income level in your county, according to the 2021 US Census (ACS)? Per person annual income is shown in this interactive map. Per person annual income is calculated as:
+
+$$per\_person\_income_i = \frac{median\_family\_income_{i}}{avg\_family\_size_i}$$
+
+```{r query_process_data, echo=FALSE, message=FALSE, warning=FALSE}
+# US Census API library
+library(tidycensus)
+library(tidyverse)
+library(geojsonio)
+# Library for shape files
+library(sf)
+library(scales)
+library(htmltools)
+library(htmlwidgets)
+# Library to read Census shape files
+library(tigris)
+library(leaflet)
+
+# census_api_key('a22e52a2d1b1c6c403b1508183a23ce97b59172d', install=TRUE)
+
+# Load ACS data for population estimates
+
+
+# all_census_variables <- load_variables(year = 2021, dataset = "acs5")
+
+
+# Population
+population <- get_acs(
+  geography = "county",
+  variables = "B01003_001",  # Total population
+  year = 2021,
+  survey = "acs5") %>% 
+  rename(population = estimate) %>%
+  select(-variable, -moe)
+
+
+# Number of workers
+worker_population <- get_acs(
+  geography = "county",
+  variables = "B23025_005",
+  year = 2021,
+  survey = "acs5") %>% 
+  rename(workers = estimate) %>%
+  select(-NAME, -variable, -moe)
+
+# Median wage income
+wages <- get_acs(
+  geography = "county",
+  variables = "B20002_001",
+  year = 2021,
+  survey = "acs5") %>%
+  rename(median_wage = estimate) %>%
+  select(-NAME, -variable, -moe)
+
+# Household size
+avg_household_size <- get_acs(
+  geography = "county",
+  variables = "B25010_001",
+  year = 2021,
+  survey = "acs5") %>%
+  rename(household_size = estimate) %>%
+  select(-NAME, -variable, -moe)
+
+# Household income
+median_household_income <- get_acs(
+  geography = "county",
+  variables = "B19013_001",
+  year = 2021,
+  survey = "acs5") %>% 
+  rename(median_household_income = estimate) %>%
+  select(-NAME, -variable, -moe)
+
+
+# Vehicle ownership
+vehicle <- get_acs(
+  geography = "county",
+  variables = c(
+    total_households = "B25044_001",
+    no_vehicle = "B25044_003",
+    one_vehicle = "B25044_004",
+    two_vehicles = "B25044_005",
+    three_vehicles = "B25044_006",
+    four_or_more_vehicles = "B25044_007"),
+  year = 2021,
+  survey = "acs5") %>%
+  select(GEOID, variable, estimate) %>%
+  pivot_wider(names_from = variable, 
+              values_from = estimate) %>%
+  mutate(vehicle_per_hh = 
+           (no_vehicle * 0 +
+              one_vehicle * 1 +
+              two_vehicles * 2 +
+              three_vehicles * 3 +
+              four_or_more_vehicles * 4) /
+           total_households) %>%
+  select(GEOID, vehicle_per_hh)
+
+# Education
+education<- get_acs(
+  geography = "county",
+  variables = c(
+    total_population_25_over = "B15003_001",
+    bachelor = "B15003_022",
+    master = "B15003_023",
+    professional = "B15003_024",
+    doctoral = "B15003_025"),
+  year = 2021,
+  survey = "acs5") %>%
+  select(GEOID, variable, estimate) %>%
+  pivot_wider(names_from = variable,
+              values_from = estimate) %>%
+  mutate(
+    college_or_higher = bachelor + 
+      master + 
+      professional + 
+      doctoral,
+    proportion_college_or_higher = college_or_higher / total_population_25_over) %>%
+  select(GEOID, 
+         college_or_higher, 
+         proportion_college_or_higher) 
+
+
+
+# Land area of all counties
+options(tigris_use_cache = TRUE)  # Cache shapefiles for reuse
+
+# Download county shapefiles
+counties <- counties(year = 2021) 
+
+# Calculate land area in square kilometers
+counties <- counties %>%
+  mutate(land_area_sqkm = as.numeric(st_area(geometry) / 1e6))  # m² to km²
+
+#counties <- counties %>%
+#  st_simplify(dTolerance = 3000)  # Simplify right after loading
+
+
+county_land_area <- counties %>%
+  select(GEOID, land_area_sqkm) 
+
+
+# Housing price
+housing_values <- get_acs(
+  geography = "county",
+  variables = c(median_housing_value = "B25077_001"),
+  year = 2021,
+  survey = "acs5") %>%
+  select(GEOID, estimate) %>%
+  rename(median_housing_price = estimate) 
+
+
+##
+# Putting everything together
+##
+census_county <- population %>%
+  left_join(worker_population, by = 'GEOID') %>%
+  left_join(wages, by = 'GEOID') %>%
+  left_join(avg_household_size, by='GEOID') %>%
+  left_join(median_household_income, by = 'GEOID') %>%
+  mutate(per_person_income = median_household_income /
+           household_size) %>%
+  left_join(vehicle, by = 'GEOID') %>%
+  left_join(education, by = 'GEOID') %>% 
+  left_join(housing_values, by = 'GEOID') %>%
+  left_join(county_land_area, by = 'GEOID') %>%
+  mutate(worker_density = workers /
+           land_area_sqkm) 
+```
+
+```{r prepare_map, echo=FALSE, message=FALSE, warning=FALSE}
+# Ensure the data is in the sf format
+census_county_sf <- left_join(counties, census_county, by = "GEOID")
+
+# NAME.x is the desired column
+census_county_sf <- census_county_sf %>%
+  mutate(NAME = NAME.y) %>%  # Rename NAME.y to NAME
+  select(-NAME.x, -NAME.y)   # Remove unnecessary columns
+
+census_county_sf <- census_county_sf %>%
+  mutate(geometry = geometry.x) %>%  # Rename NAME.y to NAME
+  select(-geometry.x, -geometry.y) 
+
+# Ensure spatial data has the correct CRS
+census_county_sf <- st_transform(census_county_sf, crs = 4326)
+
+# Simplify geometries significantly
+# census_county_sf <- st_simplify(census_county_sf, dTolerance = 5)  # Experiment with higher values (e.g., 2 or 5)
+
+# Save the simplified data as a GeoJSON file
+# st_write(census_county_sf, "../docs/county_data.geojson", driver = "GeoJSON")
+
+census_county_sf <- st_simplify(census_county_sf, dTolerance = 2000)
+```
+
+
+
+```{r generate_map, echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate quintiles for the per_person_income variable
+quintile_breaks <- quantile(census_county_sf$per_person_income, probs = seq(0, 1, 0.2), na.rm = TRUE)
+
+# Custom color palette using bins
+palette <- colorRampPalette(c("blue", "white", "red"))  # Smooth transition from blue to red
+pal <- colorBin(
+  palette = palette(100),  # Generate 100 intermediate colors for smoother gradients
+  domain = census_county_sf$per_person_income,  # Data range
+  bins = quintile_breaks,  # Quintile breakpoints
+  reverse = TRUE,
+  na.color = "transparent"
+)
+
+# Generate the map and save it to a variable
+interactive_map <- leaflet(data = census_county_sf) %>%
+  setView(lng = -96, lat = 37.8, zoom = 4.3) %>%  # Center on mainland U.S.
+#  addProviderTiles("CartoDB.Positron") %>%  # Base map layer
+  addProviderTiles("OpenStreetMap") %>%
+  addPolygons(
+    fillColor = ~pal(per_person_income),
+    color = "white",  # Border color
+    weight = 1,       # Border thickness
+    opacity = 1,      # Border opacity
+    fillOpacity = 1,  # Fully opaque colors
+    label = ~lapply(
+      paste0(
+        "<strong>County:</strong> ", NAME, "<br>",
+        "<strong>Population:</strong> ",
+        ifelse(is.na(population), "Not Available",
+               format(round(population), big.mark = ",")), "<br>",  # Rounded population
+        "<strong>Per Person Income :</strong> ",
+        ifelse(is.na(per_person_income), "Not Available",
+               paste0("$", format(round(per_person_income), big.mark = ","))), "<br>",
+        "<strong>Median Household Income:</strong> ",
+        ifelse(is.na(median_household_income), "Not Available",
+               paste0("$", format(round(median_household_income), big.mark = ","))) 
+        # Rounded income
+      ), HTML
+    ),  # Render tooltips as HTML
+    highlightOptions = highlightOptions(
+      weight = 3,  # Thicker border on hover
+      color = "black",
+      bringToFront = TRUE
+    )
+  ) %>%
+  addProviderTiles("CartoDB.PositronOnlyLabels") %>%  # Add a layer with only labels
+  addLegend(
+    pal = pal,
+    values = ~per_person_income,
+#    title = "2021 US Census Per-person Income (quintiles)",
+    title = '<div style="text-align: left;">
+             Per-person Income (quintiles)<br>
+             <span style="font-size: 12px; color: gray;">(2021 US Census)</span>
+           </div>',
+    labFormat = labelFormat(
+      prefix = "$",
+      big.mark = ",",
+      between = " to ",
+      transform = function(x) round(x)  # Round to nearest integer
+    ),
+    position = "bottomright",
+    opacity = 1  # Make legend fully opaque
+  ) %>%
+  addControl(
+    html =
+    '<div style="text-align: center; margin-top: 20px;">
+  <!-- X (Twitter) -->
+  <a href="https://twitter.com/intent/tweet?text=Explore+this+interactive+map:+&url=https://dabingougou.github.io/datahub/interactive_map.html" 
+     target="_blank">
+    <img src="https://dabingougou.github.io/datahub/assets/X.png" 
+         alt="Share on X" 
+         style="width: 40px; height: auto; margin: 0 10px;">
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://dabingougou.github.io/datahub/interactive_map.html" 
+     target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
+         alt="Share on LinkedIn" 
+         style="width: 40px; height: auto; margin: 0 10px;">
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/" 
+     target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+         alt="Share on Instagram" 
+         style="width: 40px; height: auto; margin: 0 10px;">
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://dabingougou.github.io/datahub/interactive_map.html" 
+     target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+         alt="Share on Facebook" 
+         style="width: 40px; height: auto; margin: 0 10px;">
+  </a>
+
+ <!-- WeChat Moment -->
+  <a href="javascript:void(0)" 
+     onclick="alert(\'WeChat sharing requires scanning a QR code. Use a QR code generator to share the link.\')" 
+     target="_blank">
+    <img src="https://dabingougou.github.io/datahub/assets/wechat.png" 
+         alt="Share on WeChat" 
+         style="width: 40px; height: auto; margin: 0 10px;">
+  </a>
+</div>',
+    position = "bottomleft"
+  )
+
+
+# Save the standalone map to an HTML file
+saveWidget(interactive_map, "../docs/interactive_map.html", selfcontained = TRUE)
+
+# Render the map inline in the QMD page
+interactive_map
+```
+Contact me at [huibin.chang@berkeley.edu](mailto:huibin.chang@berkeley.edu)

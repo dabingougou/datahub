@@ -12,5 +12,12 @@
     "title": "Page 1",
     "section": "",
     "text": "Vehicle ownership\n\n\nPage 1\nThis is the content for Page 1. You can add links back to Home."
+  },
+  {
+    "objectID": "2021_county_income.html",
+    "href": "2021_county_income.html",
+    "title": "How affluent is your county",
+    "section": "",
+    "text": "What’s the income level in your county, according to the 2021 US Census (ACS)? Per person annual income is shown in this interactive map. Per person annual income is calculated as:\n\\[per\\_person\\_income_i = \\frac{median\\_family\\_income_{i}}{avg\\_family\\_size_i}\\]\n\n\n\n\n\n\nContact me at huibin.chang@berkeley.edu"
   }
 ]

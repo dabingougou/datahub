@@ -4,12 +4,12 @@ project:
 
 website:
   title: "DataHub"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: vehicle_ownership.qmd
-        text: Page 1
+#  navbar:
+#    left:
+#      - href: index.qmd
+#        text: Home
+#      - href: 2021_county_income.qmd
+#        text: Perso
   #      - href: pages/page2.qmd
   #      text: Page 2
 
