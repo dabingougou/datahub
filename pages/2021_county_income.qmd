@@ -315,7 +315,7 @@ interactive_map <- leaflet(data = census_county_sf) %>%
 
 
 # Save the standalone map to an HTML file
-saveWidget(interactive_map, "../docs/interactive_map.html", selfcontained = TRUE)
+saveWidget(interactive_map, "../docs/county_income_map.html", selfcontained = TRUE)
 
 # Render the map inline in the QMD page
 interactive_map
