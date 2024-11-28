@@ -13,7 +13,7 @@ meta:
   - property: og:image
     content: "https://dabingougou.github.io/datahub/income_thumbnail.png"
   - property: og:url
-    content: "https://dabingougou.github.io/datahub/county_income_map.html"
+    content: "https://dabingougou.github.io/datahub/2021_county_income.html"
   - property: og:type
     content: "website"
   - name: twitter:card
