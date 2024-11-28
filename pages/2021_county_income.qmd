@@ -292,7 +292,7 @@ interactive_map <- leaflet(data = census_county_sf) %>%
     html =
     '<div style="text-align: center; margin-top: 20px;">
   <!-- X (Twitter) -->
-  <a href="https://twitter.com/intent/tweet?text=Explore+this+interactive+map:+&url=https://dabingougou.github.io/datahub/county_income_map.html" 
+  <a href="https://twitter.com/intent/tweet?text=Explore+this+interactive+map:+&url=https://dabingougou.github.io/datahub/2021_county_income.html" 
      target="_blank">
     <img src="https://dabingougou.github.io/datahub/assets/X.png" 
          alt="Share on X" 
@@ -300,7 +300,7 @@ interactive_map <- leaflet(data = census_county_sf) %>%
   </a>
 
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://dabingougou.github.io/datahub/county_income_map.html" 
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://dabingougou.github.io/datahub/2021_county_income.html" 
      target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
          alt="Share on LinkedIn" 
@@ -316,7 +316,7 @@ interactive_map <- leaflet(data = census_county_sf) %>%
   </a>
 
   <!-- Facebook -->
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://dabingougou.github.io/datahub/county_income_map.html" 
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://dabingougou.github.io/datahub/2021_county_income.html" 
      target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
          alt="Share on Facebook" 
