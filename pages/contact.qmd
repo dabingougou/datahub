@@ -1,43 +1,25 @@
-## Contact Me
 
+## Contact Me
 <div style="display: flex; align-items: center; gap: 10px;">
 
   <!-- Email -->
   <a href="mailto:your.huibin.chang@berkeley.edu" style="text-decoration: none; color: black;">
-    <img src="https://dabingougou.github.io/datahub/assets/email.png" 
-         alt="Email me" 
-         style="width: 40px; height: auto; margin: 0 10px;"
-       onmouseover="this.style.filter='grayscale(0%)';" 
-       onmouseout="this.style.filter='grayscale(100%)';"> 
-      huibin.chang@berkeley.edu
+    📧 Email: huibin.chang@berkeley.edu
   </a>
-
 
   <!-- LinkedIn -->
   <a href="https://www.linkedin.com/in/huibin-chang" target="_blank" style="text-decoration: none; color: black;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
-         alt="LinkedIn" style="width: 24px; height: 24px;"> 
-    Huibin Chang
+    🔗 LinkedIn: Huibin Chang
   </a>
 
-
   <!-- X (formerly Twitter) -->
-<a href="https://twitter.com/ChangHuibin" target="_blank" style="text-decoration: none; color: black;">
-  <img src="https://dabingougou.github.io/datahub/assets/X.png" 
-         alt="Share on X" 
-         style="width: 40px; height: auto; margin: 0 10px;"
-       onmouseover="this.style.filter='grayscale(0%)';" 
-       onmouseout="this.style.filter='grayscale(100%)';"> 
-  @ChangHuibin
-</a>
-
-
+  <a href="https://twitter.com/ChangHuibin" target="_blank" style="text-decoration: none; color: black;">
+    ❌ X: @ChangHuibin
+  </a>
 
   <!-- Instagram -->
   <a href="https://instagram.com/huibinchang" target="_blank" style="text-decoration: none; color: black;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-         alt="Instagram" style="width: 24px; height: 24px;"> 
-    @huibinchang
+    📸 Instagram: @huibinchang
   </a>
 
 </div>
