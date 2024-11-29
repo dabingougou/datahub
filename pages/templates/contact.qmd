@@ -13,7 +13,6 @@
   <a href="https://www.linkedin.com/in/huibin-chang" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
          alt="LinkedIn" style="width: 24px; height: 24px;"> 
-    Huibin Chang
   </a>
 
 
@@ -25,7 +24,6 @@
        alt="X" style="width: 24px; height: 24px; filter: grayscale(100%); transition: filter 0.3s;" 
        onmouseover="this.style.filter='grayscale(0%)';" 
        onmouseout="this.style.filter='grayscale(100%)';"> 
-  @ChangHuibin
 </a>
 
 
@@ -34,7 +32,6 @@
   <a href="https://instagram.com/huibinchang" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
          alt="Instagram" style="width: 24px; height: 24px;"> 
-    @huibinchang
   </a>
 
 </div>
