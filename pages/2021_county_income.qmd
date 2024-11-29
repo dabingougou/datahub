@@ -1,12 +1,13 @@
 ---
 title: "How affluent is your county"
-author: ["Huibin Chang <huibin.chang@berkeley.edu>"]
+author: ["Huibin Chang"]
 format: html
 execute:
   echo: false
 include-in-header: 2021_county_income_meta.html
 ---
 
+{{< include templates/contact.qmd >}}
 
 ## Use this map to find out
 
@@ -305,14 +306,6 @@ interactive_map <- leaflet(data = census_county_sf) %>%
          style="width: 40px; height: auto; margin: 0 10px;">
   </a>
 
- <!-- WeChat Moment -->
-  <a href="javascript:void(0)" 
-     onclick="alert(\'WeChat sharing requires scanning a QR code. Use a QR code generator to share the link.\')" 
-     target="_blank">
-    <img src="https://dabingougou.github.io/datahub/assets/wechat.png" 
-         alt="Share on WeChat" 
-         style="width: 40px; height: auto; margin: 0 10px;">
-  </a>
 </div>',
     position = "bottomleft"
   )
@@ -401,6 +394,6 @@ kable(bottom_25, caption = "Least affluent counties")
 ```{r clean_up, echo=FALSE, message=FALSE, warning=FALSE}
 rm(list=ls())
 ```
-Contact me at [huibin.chang@berkeley.edu](mailto:huibin.chang@berkeley.edu). 
 
 [Click here for source code](https://github.com/dabingougou/datahub/blob/main/pages/2021_county_income.qmd)
+
