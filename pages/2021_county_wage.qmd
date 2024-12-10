@@ -235,12 +235,12 @@ interactive_map <- leaflet(data = census_county_sf) %>%
         "<strong>Population:</strong> ",
         ifelse(is.na(population), "Not Available",
                format(round(population), big.mark = ",")), "<br>",  # Rounded population
-        "<strong>Per Person Income :</strong> ",
+        "<strong>Median Wage:</strong> ",
         ifelse(is.na(median_wage), "Not Available",
                paste0("$", format(round(median_wage), big.mark = ","))), "<br>",
         "<strong>Median Household Income:</strong> ",
-        ifelse(is.na(median_wage), "Not Available",
-               paste0("$", format(round(median_wage), big.mark = ","))) 
+        ifelse(is.na(median_household_income), "Not Available",
+               paste0("$", format(round(median_household_income), big.mark = ","))) 
         # Rounded income
       ), HTML
     ),  # Render tooltips as HTML
