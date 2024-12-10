@@ -47,5 +47,12 @@
     "title": "Welcome",
     "section": "",
     "text": "Welcome to DataHub\nI host data narratives that I come across. Contact: huibin.chang@berkeley.edu"
+  },
+  {
+    "objectID": "2021_county_wage.html",
+    "href": "2021_county_wage.html",
+    "title": "Median Wage in US counties",
+    "section": "",
+    "text": "Click here for source code"
   }
 ]

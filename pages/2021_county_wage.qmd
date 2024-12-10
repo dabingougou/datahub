@@ -1,21 +1,12 @@
 ---
-title: "Vehicle_ownership"
-author: ["Huibin Chang"]
+title: "Median Wage in US counties"
+author: ["Annelise, Huibin, and Nick"]
 format: html
 execute:
   echo: false
-# include-in-header: 2021_county_income_meta.html
+#include-in-header: 2021_county_income_meta.html
 ---
 
-<!--# Update title and file meta.html-->
-
-{{< include templates/contact.qmd >}}
-
-## Use this map to find out
-
-**What's the income level in your county, according to the 2021 Census?** Per person annual income is shown in this interactive map. Note that personal income is generally lower than wage due to a portion of the population not earning wage income. Per person annual income is calculated as (for county $i$):
-
-$$per\_person\_income_i = \frac{median\_family\_income_{i}}{avg\_family\_size_i}$$
 
 ```{r query_process_data, echo=FALSE, message=FALSE, warning=FALSE}
 # US Census API library
@@ -179,7 +170,11 @@ census_county <- population %>%
   left_join(housing_values, by = 'GEOID') %>%
   left_join(county_land_area, by = 'GEOID') %>%
   mutate(worker_density = workers /
-           land_area_sqkm) 
+           land_area_sqkm)
+
+
+census_county <- 
+  census_county[!is.na(census_county$median_wage), ]
 ```
 
 ```{r prepare_map, echo=FALSE, message=FALSE, warning=FALSE}
@@ -211,13 +206,13 @@ census_county_sf <- st_simplify(census_county_sf, dTolerance = 2000)
 
 ```{r generate_map, echo=FALSE, message=FALSE, warning=FALSE}
 # Calculate quintiles for the per_person_income variable
-quintile_breaks <- quantile(census_county_sf$per_person_income, probs = seq(0, 1, 0.2), na.rm = TRUE)
+quintile_breaks <- quantile(census_county_sf$median_wage, probs = seq(0, 1, 0.2), na.rm = TRUE)
 
 # Custom color palette using bins
 palette <- colorRampPalette(c("blue", "white", "red"))  # Smooth transition from blue to red
 pal <- colorBin(
   palette = palette(100),  # Generate 100 intermediate colors for smoother gradients
-  domain = census_county_sf$per_person_income,  # Data range
+  domain = census_county_sf$median_wage,  # Data range
   bins = quintile_breaks,  # Quintile breakpoints
   reverse = TRUE,
   na.color = "transparent"
@@ -229,7 +224,7 @@ interactive_map <- leaflet(data = census_county_sf) %>%
 #  addProviderTiles("CartoDB.Positron") %>%  # Base map layer
   addProviderTiles("OpenStreetMap") %>%
   addPolygons(
-    fillColor = ~pal(per_person_income),
+    fillColor = ~pal(median_wage),
     color = "white",  # Border color
     weight = 1,       # Border thickness
     opacity = 1,      # Border opacity
@@ -241,11 +236,11 @@ interactive_map <- leaflet(data = census_county_sf) %>%
         ifelse(is.na(population), "Not Available",
                format(round(population), big.mark = ",")), "<br>",  # Rounded population
         "<strong>Per Person Income :</strong> ",
-        ifelse(is.na(per_person_income), "Not Available",
-               paste0("$", format(round(per_person_income), big.mark = ","))), "<br>",
+        ifelse(is.na(median_wage), "Not Available",
+               paste0("$", format(round(median_wage), big.mark = ","))), "<br>",
         "<strong>Median Household Income:</strong> ",
-        ifelse(is.na(median_household_income), "Not Available",
-               paste0("$", format(round(median_household_income), big.mark = ","))) 
+        ifelse(is.na(median_wage), "Not Available",
+               paste0("$", format(round(median_wage), big.mark = ","))) 
         # Rounded income
       ), HTML
     ),  # Render tooltips as HTML
@@ -258,10 +253,10 @@ interactive_map <- leaflet(data = census_county_sf) %>%
   addProviderTiles("CartoDB.PositronOnlyLabels") %>%  # Add a layer with only labels
   addLegend(
     pal = pal,
-    values = ~per_person_income,
+    values = ~median_wage,
 #    title = "2021 US Census Per-person Income (quintiles)",
     title = '<div style="text-align: left;">
-             Per-person Income (quintiles)<br>
+             Median wage (quintiles)<br>
              <span style="font-size: 12px; color: gray;">(2021 US Census)</span>
            </div>',
     labFormat = labelFormat(
@@ -277,7 +272,7 @@ interactive_map <- leaflet(data = census_county_sf) %>%
     html =
     '<div style="text-align: center; margin-top: 20px;">
   <!-- X (Twitter) -->
-  <a href="https://twitter.com/intent/tweet?text=Explore+this+interactive+map:+&url=https://dabingougou.github.io/datahub/2021_county_income.html" 
+  <a href="https://twitter.com/intent/tweet?text=Explore+this+interactive+map:+&url=https://dabingougou.github.io/datahub/2021_county_wage.html" 
      target="_blank">
     <img src="https://dabingougou.github.io/datahub/assets/X.png" 
          alt="Share on X" 
@@ -285,7 +280,7 @@ interactive_map <- leaflet(data = census_county_sf) %>%
   </a>
 
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://dabingougou.github.io/datahub/2021_county_income.html" 
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://dabingougou.github.io/datahub/2021_county_wage.html" 
      target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
          alt="Share on LinkedIn" 
@@ -301,7 +296,7 @@ interactive_map <- leaflet(data = census_county_sf) %>%
   </a>
 
   <!-- Facebook -->
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://dabingougou.github.io/datahub/2021_county_income.html" 
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://dabingougou.github.io/datahub/2021_county_wage.html" 
      target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
          alt="Share on Facebook" 
@@ -321,81 +316,9 @@ interactive_map
 ```
 \vspace{10mm}
 
-## The most and least affluent counties by personal income
-
-The 3 tables below show the most populous, and top and bottom 25 counties in the US ranked by personal income.
-
-### First Table: By Population
-```{r generate_table_populous, echo=FALSE, message=FALSE, warning=FALSE}
-top_30_pop <- census_county %>%
-  arrange(desc(population)) %>%
-  mutate('Population Rank' = row_number()) %>%
-  slice_head(n = 30) %>%
-  select(`Population Rank`, 
-         'County' = NAME, 
-         'Population' = population, 
-         'Median Household Income' = median_household_income,
-         'Per Person Income' = per_person_income) %>%
-   mutate(
-    Population = comma(replace_na(Population, 0)),
-    'Median Household Income' = dollar(replace_na(`Median Household Income`, 0)),
-    'Per Person Income' = dollar(round(`Per Person Income`))
-  )
-
-kable(top_30_pop, caption = "Most populous counties")
-```
-
-
-\vspace{10mm}
-
-### Second Table: Top Income Counties
-```{r generate_table_rich, echo=FALSE, message=FALSE, warning=FALSE}
-top_25 <- census_county %>%
-  arrange(desc(per_person_income)) %>%
-  mutate('Income Rank' = row_number()) %>%
-  slice_head(n = 25) %>%
-  select(`Income Rank`, 
-         'County' = NAME, 
-         'Population' = population, 
-         'Median Household Income' = median_household_income,
-         'Per Person Income' = per_person_income) %>%
-   mutate(
-    Population = comma(replace_na(Population, 0)),
-    'Median Household Income' = dollar(replace_na(`Median Household Income`, 0)),
-    'Per Person Income' = dollar(round(`Per Person Income`))
-  )
-
-  
-kable(top_25, caption = "Most affluent counties")
-```
-
-\vspace{10mm}
-
-### Third Table: Bottom Income Counties
-```{r generate_table_poor, echo=FALSE, message=FALSE, warning=FALSE}
-bottom_25 <- census_county %>%
-  filter(!str_detect(NAME, 'Puerto Rico')) %>%
-  arrange(per_person_income) %>%
-  mutate('Rank From Bottom' = row_number()) %>%
-  slice_head(n = 25) %>%
-  select(`Rank From Bottom`, 
-         'County' = NAME, 
-         'Population' = population, 
-         'Median Household Income' = median_household_income,
-         'Per Person Income' = per_person_income) %>%
-  mutate(
-    Population = comma(replace_na(Population, 0)),
-    'Median Household Income' = dollar(replace_na(`Median Household Income`, 0)),
-    'Per Person Income' = dollar(round(`Per Person Income`))
-  )
-
-kable(bottom_25, caption = "Least affluent counties")
-```
-
-
 ```{r clean_up, echo=FALSE, message=FALSE, warning=FALSE}
 rm(list=ls())
 ```
 
-[Click here for source code](https://github.com/dabingougou/datahub/blob/main/pages/2021_county_income.qmd)
+[Click here for source code](https://github.com/dabingougou/datahub/blob/main/pages/2021_county_wage.qmd)
 
