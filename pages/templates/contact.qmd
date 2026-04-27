@@ -28,11 +28,5 @@
 
 
 
-  <!-- Instagram -->
-  <a href="https://instagram.com/huibinchang" target="_blank" style="text-decoration: none; color: black;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-         alt="Instagram" style="width: 24px; height: 24px;"> 
-  </a>
-
 </div>
 

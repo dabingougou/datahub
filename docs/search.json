@@ -54,5 +54,145 @@
     "title": "Median Wage in US counties",
     "section": "",
     "text": "Click here for source code"
+  },
+  {
+    "objectID": "bc_population_2019_2025.html",
+    "href": "bc_population_2019_2025.html",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "",
+    "text": "huibin.chang@berkeley.edu"
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#why-this-matters",
+    "href": "bc_population_2019_2025.html#why-this-matters",
+    "title": "British Columbia’s population, 2019–2025: what changed",
+    "section": "Why this matters",
+    "text": "Why this matters\nFor most of the post-2015 period, British Columbia grew on multiple legs at once: small but positive natural increase, steady interprovincial gains, and a rising baseline of permanent-resident immigration. By 2024, that picture had narrowed to a single dominant lever—non-permanent resident inflows—and then that lever flipped. The result is the first BC quarterly population decline in years and a near-term outlook that depends almost entirely on federal immigration policy.\nThis piece walks through the four components of BC’s population change between 2019/20 and 2024/25, the labour-market response, and the longer-run aging trajectory. It uses public data only (Statistics Canada CANSIM tables and BC Stats projections); code and processed data are linked at the bottom."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#the-four-components-of-population-change",
+    "href": "bc_population_2019_2025.html#the-four-components-of-population-change",
+    "title": "British Columbia’s population, 2019–2025: what changed",
+    "section": "The four components of population change",
+    "text": "The four components of population change\nPopulation change in BC (and any province) decomposes into four flows:\n\nNatural increase = births minus deaths.\nNet international permanent residents (PRs) = immigrants landing under the federal Immigration Levels Plan, minus emigrants and other small categories.\nNet non-permanent residents (NPRs) = students, temporary foreign workers, asylum claimants, and other temporary status holders, net of departures.\nNet interprovincial migration = inflow from other provinces minus outflow to other provinces.\n\nThree of the four weakened materially between 2019/20 and 2024/25. NPRs were the swing factor.\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nNatural increase fell from about $+$3,900 in 2019/20 to negative for three consecutive years before recovering marginally to $+$500 in 2024/25. BC’s total fertility rate is below replacement, and deaths now roughly match births. This component is no longer a meaningful contributor to growth.\nInterprovincial migration flipped from a $+$26,000 net gain in 2021/22 to net losses of $-$4,100 (2023/24) and $-$2,400 (2024/25). Working-age households are leaving the province on net for the first time in years. Cost-of-living and housing-affordability differentials with other provinces—particularly Alberta—are widely cited as contributing factors in public commentary, though this analysis does not attempt to isolate causes.\nNet international PRs stayed in a $+$30K to $+$70K range, in line with BC’s allocation under the federal Immigration Levels Plan. This is the most stable of the four components.\nNPRs were the swing factor. Net NPR change went from $-$8,800 (2020/21, COVID exit) to a record $+$112,900 in 2023/24 and then $-$12,600 in 2024/25 as federal caps took effect. By the peak, NPRs alone accounted for roughly two-thirds of BC’s annual population growth. When the cap constrained that flow, no other component was large enough to offset the loss."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#bc-tracks-canada-but-with-a-slightly-earlier-turn",
+    "href": "bc_population_2019_2025.html#bc-tracks-canada-but-with-a-slightly-earlier-turn",
+    "title": "British Columbia’s population, 2019–2025: what changed",
+    "section": "BC tracks Canada, but with a slightly earlier turn",
+    "text": "BC tracks Canada, but with a slightly earlier turn\nThe pattern is national, not unique to BC. Canada as a whole saw the same NPR boom and bust over the same window. Indexed to Q1 2019, BC’s population trajectory ran modestly above Canada’s, both peaked in early 2025, and both have edged down since.\n\n\n\n\n\n\n\n\nFigure 2\n\n\n\n\n\nThe fact that the inflection is national—not BC-specific—matters. It means the trajectory is largely driven by federal immigration policy, not provincial economic conditions. Federal NPR caps announced in 2024 (target: temporary residents at 5% of population by end of 2026) are the dominant near-term driver of provincial population trajectories."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#the-labour-market-response-a-mix-shift-not-a-contraction",
+    "href": "bc_population_2019_2025.html#the-labour-market-response-a-mix-shift-not-a-contraction",
+    "title": "British Columbia’s population, 2019–2025: what changed",
+    "section": "The labour-market response: a mix shift, not a contraction",
+    "text": "The labour-market response: a mix shift, not a contraction\nThe intuitive story would be: lose 125,000 NPRs in a year, employment falls in the sectors NPRs filled. The reality is more interesting.\nBetween January 2024 and early 2026, total BC employment was approximately flat ($+$0.15%). But underneath that flat aggregate, the sectoral mix changed sharply. Some sectors absorbed displaced labour and grew; others cooled.\n\n\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\nSectors that grew through the period: construction ($+\\(14.5%, about 33,900 net jobs in BC), accommodation & food (\\)+\\(5.6%), professional & technical services (\\)+\\(4.6%), and health & social services (\\)+$2.7%). Strong demand pulled in domestic workers despite the supply shock.\nSectors that cooled: wholesale & retail trade ($-\\(4.4%), transport & warehousing (\\)-\\(7.4%), information & culture (\\)-\\(12.9%), and forestry/mining/oil (\\)-$22.8%, off a small base). Several of these had high prior NPR or recent-newcomer labour shares.\nA few patterns are worth noting:\n\nBC’s sectoral pattern broadly follows Canada’s, but BC’s swings are larger in several sectors. Construction in particular grew much faster in BC than nationally.\nInformation & culture’s $-$13% in BC is notable; this category includes parts of media, broadcasting, and tech-adjacent occupations. The decline outpaces Canada and may reflect both AI-related demand softening in some content roles and BC-specific cooling in tech employment after the post-2020 boom.\nHealth & social services growth is national but BC tracks slightly behind Canada. Aging-driven demand for healthcare workers is a multi-decade direction; current data is the early signal."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#aging-is-the-long-run-constant",
+    "href": "bc_population_2019_2025.html#aging-is-the-long-run-constant",
+    "title": "British Columbia’s population, 2019–2025: what changed",
+    "section": "Aging is the long-run constant",
+    "text": "Aging is the long-run constant\nNPR volatility is the headline; aging is the trend. BC’s working-age share (population aged 15–64) peaked around 2024 at about 67% of total population and is projected to fall to roughly 65% by the late 2030s. The senior share rises from 21% to 24% over the same window.\n\n\n\n\n\n\n\n\nFigure 4\n\n\n\n\n\nThe old-age dependency ratio—the number of seniors per 100 working-age adults—rises from about 24 in 2024 to a projected 36 by 2046. BC tracks slightly below the Canada average but follows the same upward path. The implication for labour supply is straightforward: even if international and interprovincial flows recover, the underlying population structure is becoming more demographically constrained on the supply side."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#what-the-bc-stats-projections-imply",
+    "href": "bc_population_2019_2025.html#what-the-bc-stats-projections-imply",
+    "title": "British Columbia’s population, 2019–2025: what changed",
+    "section": "What the BC Stats projections imply",
+    "text": "What the BC Stats projections imply\nBC Stats projects total BC population to remain roughly flat in 2025, decline in 2026 ($-$45,000 from the 2024 peak), then resume gradual growth—reaching about 5.86 million by 2030 and 6.18 million by 2035. Median age rises from 40.9 (2024) to 46.4 (2046).\nThe trajectory is conditional on federal NPR policy stabilising near the announced 5% target and PR landings remaining at planned levels. If federal caps are loosened, BC’s near-term population path lifts. If they tighten further, the 2026 decline deepens and 2027 recovery delays. This is now the largest single source of uncertainty in provincial population forecasting."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#things-to-watch",
+    "href": "bc_population_2019_2025.html#things-to-watch",
+    "title": "British Columbia’s population, 2019–2025: what changed",
+    "section": "Things to watch",
+    "text": "Things to watch\nA few signals worth tracking over the next 12–24 months:\n\nFederal NPR policy direction. Whether the 5%-of-population target holds, loosens, or tightens will dominate near-term population trajectories.\nQuarterly interprovincial flow. BC’s recent net losses to other provinces are a relatively new pattern. Whether they persist through 2026 affects working-age supply.\nSectoral wage data. Employment growth in construction, healthcare, and accommodation despite a supply shock suggests wage pressure. Statistics Canada’s Survey of Employment, Payrolls and Hours releases through 2026 will show whether wages are absorbing the supply shock or whether shortages are persisting at flat real wages.\nAI-related occupational shifts. Information & culture’s $-$13% decline is one early signal; whether similar declines appear in administrative support, customer service, and basic content production through 2026–2027 will inform whether AI displacement is becoming visible in standard labour-market data."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#sources-and-methods",
+    "href": "bc_population_2019_2025.html#sources-and-methods",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "Sources and methods",
+    "text": "Sources and methods\nData. All figures are computed from public sources:\n\nStatistics Canada, Table 17-10-0008-01: Estimates of the components of demographic growth, annual.\nStatistics Canada, Table 17-10-0009-01: Population estimates, quarterly.\nStatistics Canada, Table 17-10-0005-01: Population estimates by age and sex, annual.\nStatistics Canada, Table 14-10-0355-01: Employment by industry, monthly, by province (LFS).\nBC Stats, British Columbia Population: 2023 Estimates and 2024–2046 Projections, Tables 1 and 3.\nWorld Bank Open Data: total population (SP.POP.TOTL), working-age share (SP.POP.1564.TO.ZS), and senior share (SP.POP.65UP.TO.ZS). Pulled via the wbstats R package.\nImmigration, Refugees and Citizenship Canada, 2025–2027 Immigration Levels Plan (October 24, 2024). The 5%-of-population target for non-permanent residents was first announced by Minister Marc Miller on March 21, 2024.\n\nCode and processed data. R scripts and processed CSVs are kept in a project repository; reach out if you would like access for replication.\nDisclaimer. Personal data analysis using public sources. Not affiliated with any employer; views are my own."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#three-of-four-growth-drivers-weakened-non-permanent-residents-were-the-swing",
+    "href": "bc_population_2019_2025.html#three-of-four-growth-drivers-weakened-non-permanent-residents-were-the-swing",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "Three of four growth drivers weakened; non-permanent residents were the swing",
+    "text": "Three of four growth drivers weakened; non-permanent residents were the swing\nPopulation change in any province is the sum of four flows:\n\nNatural increase = births minus deaths.\nNet international permanent residents (PRs) = immigrants landing under the federal Immigration Levels Plan, net of emigrants and small adjustments.\nNet non-permanent residents (non-PRs) = international students, temporary foreign workers, asylum claimants, and other temporary status holders, net of departures.\nNet interprovincial migration = inflow from other provinces minus outflow to other provinces.\n\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nThree of the four flows weakened. The fourth swung wildly:\n\nNatural increase: +3,900 (2019/20) → negative for three consecutive years → +500 (2024/25). BC’s total fertility rate is below replacement; births and deaths are now roughly balanced.\nInterprovincial migration: +26,000 (2021/22) → −4,100 (2023/24) → −2,400 (2024/25). Working-age households leaving BC on net for the first time in years. Cost-of-living and housing-affordability differentials with other provinces, particularly Alberta, are widely cited as contributing factors.\nNet international PRs: stayed in a +30K to +70K range, in line with BC’s allocation under the federal Immigration Levels Plan. The most stable of the four components.\nNet non-PRs: −8,800 (2020/21, COVID exit) → +112,900 (2023/24 peak) → −12,600 (2024/25). The swing factor and the story below."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#the-2024-federal-cap-collapsed-the-largest-single-source-of-bc-growth",
+    "href": "bc_population_2019_2025.html#the-2024-federal-cap-collapsed-the-largest-single-source-of-bc-growth",
+    "title": "How federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "The 2024 federal cap collapsed the largest single source of BC growth",
+    "text": "The 2024 federal cap collapsed the largest single source of BC growth\nNet NPR change in BC went from $-$8,800 in 2020/21 (COVID-era exit) to a record $+$112,900 in 2023/24, and then to $-$12,600 in 2024/25. By the peak, NPRs alone accounted for roughly two-thirds of BC’s annual population growth. The Canada-wide pattern is the same in direction and even larger in magnitude: net NPR change at the national level swung from $+$671,525 (2022/23) to $+$781,075 (2023/24) and then $-$14,954 (2024/25).\nThe shift was policy-driven. In 2024 the federal government announced a target to bring temporary residents to 5% of total population by the end of 2026, down from roughly 7% at the time. Implementation has cut across study permits (with a federal cap on international students), post-graduation work permits, and temporary foreign worker intake. The 2024/25 numbers in the chart above are the first full-year reading of the new regime.\nThe implication for BC’s near-term population path is that federal immigration policy now matters more than provincial economic conditions. If federal targets are loosened, the population path lifts. If they tighten further, the 2026 dip deepens."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#bc-and-canada-peaked-together-this-is-a-national-story",
+    "href": "bc_population_2019_2025.html#bc-and-canada-peaked-together-this-is-a-national-story",
+    "title": "How federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "BC and Canada peaked together: this is a national story",
+    "text": "BC and Canada peaked together: this is a national story\nIndexed to Q1 2019, BC’s population trajectory ran modestly above Canada’s, both peaked together in early 2025, and both have edged down since. The fact that the inflection is national, not BC-specific, reinforces the federal-policy reading: provinces with very different economic conditions are seeing the same population turn.\n\n\n\n\n\n\n\n\nFigure 2"
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#construction-and-healthcare-grew-retail-and-information-cooled",
+    "href": "bc_population_2019_2025.html#construction-and-healthcare-grew-retail-and-information-cooled",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "Construction and healthcare grew; retail and information cooled",
+    "text": "Construction and healthcare grew; retail and information cooled\nA 125,000-person swing in NPRs over a single year (peak to trough in BC) might be expected to depress employment in the sectors NPRs disproportionately fill. The reality is more nuanced. Total BC employment was approximately flat between January 2024 and early 2026 (+0.15%). Underneath that aggregate, sectoral employment shifted sharply.\n\n\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\nSectors where BC outpaced Canada (BC ran hotter than the national pace):\n\nConstruction: BC +14.5% vs Canada +2.9% — BC’s standout sector, about 33,900 net jobs.\nManufacturing: BC +2.2% vs Canada −1.3% — BC bucked a national decline.\nBusiness support services: BC +0.7% vs Canada −3.2%.\nProfessional & technical services: BC +4.6% vs Canada +2.6%.\nAccommodation & food: BC +5.6% vs Canada +4.9%.\n\nSectors where BC lagged Canada (or cooled more deeply):\n\nForestry, mining, oil & gas: BC −22.8% vs Canada +1.3% — BC’s largest underperformance, off a small base.\nInformation & culture: BC −12.9% vs Canada +4.7% — Canada-wide this sector grew; BC cooled hard.\nTransport & warehousing: BC −7.4% vs Canada +1.3%.\nOther services: BC −5.5% vs Canada −1.0%.\nWholesale & retail trade: BC −4.4% vs Canada −0.4%.\nHealth & social services: BC +2.7% vs Canada +8.3% — BC grew but at roughly a third of the national pace; an aging-driven sector where BC is currently underabsorbing demand.\n\nThe information & culture gap is worth flagging on its own. The category includes parts of media, broadcasting, and tech-adjacent occupations. BC’s −13% decline against a +5% national gain may reflect both AI-related demand softening for some content roles and BC-specific cooling in tech employment after the post-2020 boom.\nFor someone considering moving to BC, the sectors hiring most actively are skilled trades (construction), health care, hospitality, and professional services. The sectors absorbing fewer workers are retail, transport, and parts of tech and content production."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#bc-and-canada-are-both-aging-working-age-share-down-senior-share-up",
+    "href": "bc_population_2019_2025.html#bc-and-canada-are-both-aging-working-age-share-down-senior-share-up",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "BC and Canada are both aging: working-age share down, senior share up",
+    "text": "BC and Canada are both aging: working-age share down, senior share up\nNon-PR volatility is the near-term headline. Aging is the longer trend, and a global one.\n\n\n\n\n\n\n\n\nFigure 4\n\n\n\n\n\nBC’s working-age share (population aged 15–64) peaked around 2024 at about 67% and is projected to fall to roughly 65% by the late 2030s. The senior share (65+) rises from 21% to 24% over the same period. BC tracks slightly above Canada on working-age share and slightly below on senior share, but the patterns are nearly identical. The United States runs a few points lower on working-age share than Canada and slightly higher on seniors. China is aging quickly: its senior share has risen from about 7% in 2000 to 14% in 2024 and continues to climb. India remains structurally young (working-age share around 65%, senior share under 8%) but is starting to age.\nThe implication for labour supply is that even if international and interprovincial flows recover, the underlying population structure is becoming more demographically constrained on the supply side. Immigration policy is the only large lever that can offset this, and that lever is currently being pulled in the opposite direction."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#bc-stats-projects-a-2026-dip-and-gradual-recovery-to-2035",
+    "href": "bc_population_2019_2025.html#bc-stats-projects-a-2026-dip-and-gradual-recovery-to-2035",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "BC Stats projects a 2026 dip and gradual recovery to 2035",
+    "text": "BC Stats projects a 2026 dip and gradual recovery to 2035\nBC Stats’ provincial projections (published 2024, covering 2024–2046) expect total BC population to remain roughly flat in 2025, decline in 2026 (−45,000 from the 2024 peak), then resume gradual growth—reaching about 5.86 million by 2030 and 6.18 million by 2035. Median age rises from 40.9 (2024) to 46.4 (2046).\nThe trajectory is conditional on federal non-PR policy stabilising near the announced 5% target and PR landings remaining at planned levels. This is now the largest single source of uncertainty in provincial population forecasting."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#four-signals-to-watch-through-2027",
+    "href": "bc_population_2019_2025.html#four-signals-to-watch-through-2027",
+    "title": "How federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "Four signals to watch through 2027",
+    "text": "Four signals to watch through 2027\nA few signals are worth tracking over the next 12–24 months for anyone following the Canadian or BC population trend:\n\nFederal NPR policy direction. Whether the 5%-of-population target holds, loosens, or tightens will dominate near-term population trajectories.\nQuarterly interprovincial flow. BC’s recent net losses to other provinces are a relatively new pattern; whether they persist through 2026 will affect working-age supply.\nSectoral wage data. Employment growth in construction, healthcare, and accommodation despite a supply shock suggests wage pressure. Wage releases through 2026 will show whether wages are absorbing the shock or whether shortages persist at flat real wages.\nAI-related occupational shifts. Information & culture’s $-$13% decline is one early signal. Whether similar declines appear in administrative support, customer service, and basic content production through 2026–2027 will inform whether AI displacement is becoming visible in standard labour-market data."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#the-2024-federal-cap-reversed-the-largest-single-source-of-bc-growth",
+    "href": "bc_population_2019_2025.html#the-2024-federal-cap-reversed-the-largest-single-source-of-bc-growth",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "The 2024 federal cap reversed the largest single source of BC growth",
+    "text": "The 2024 federal cap reversed the largest single source of BC growth\nThe numbers. Net non-PR change in BC went from −8,800 in 2020/21 (COVID-era exit) to a record +112,900 in 2023/24, and then to −12,600 in 2024/25. By the peak, non-PRs alone accounted for roughly two-thirds of BC’s annual population growth. The Canada-wide pattern is the same in direction and larger in magnitude: net non-PR change at the national level swung from +671,525 (2022/23) to +781,075 (2023/24) and then −14,954 (2024/25).\nThe policy. The shift was policy-driven. On March 21, 2024, Immigration Minister Marc Miller announced a target to bring non-permanent residents from about 6.2% of Canada’s population in 2023 to 5% by 2027. The target was later reaffirmed in the October 2024 2025–2027 Immigration Levels Plan, with the timeline accelerated to end of 2026. Implementation has cut across study permits (with a federal cap on international students), post-graduation work permits, and temporary foreign worker intake. The 2024/25 numbers in the chart above are the first full-year reading of the new regime.\nWhat it means going forward. The implication for BC’s near-term population path is that federal immigration policy now matters more than provincial economic conditions. If federal targets are loosened, the population path lifts. If they tighten further, the 2026 dip deepens."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#bc-and-canada-populations-peaked-together-in-early-2025",
+    "href": "bc_population_2019_2025.html#bc-and-canada-populations-peaked-together-in-early-2025",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "BC and Canada populations peaked together in early 2025",
+    "text": "BC and Canada populations peaked together in early 2025\nIndexed to 2019, BC’s population trajectory ran modestly above Canada’s, both peaked together in early 2025, and both have edged down since the federal non-PR cap was announced in March 2024. By contrast, the United States and India have continued growing through 2024; China’s population is now declining (it peaked around 2022). The fact that BC’s inflection is national, not BC-specific, and contrasts with the trajectories of other large economies reinforces the federal-policy reading.\n\n\n\n\n\n\n\n\nFigure 2"
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#signals-to-watch-in-20262027",
+    "href": "bc_population_2019_2025.html#signals-to-watch-in-20262027",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "Signals to watch in 2026–2027",
+    "text": "Signals to watch in 2026–2027\nA few signals are worth tracking over the next 12–24 months for anyone following the Canadian or BC population trend:\n\nFederal NPR policy direction. Whether the 5%-of-population target holds, loosens, or tightens will dominate near-term population trajectories.\nQuarterly interprovincial flow. BC’s recent net losses to other provinces are a relatively new pattern; whether they persist through 2026 will affect working-age supply.\nSectoral wage data. Employment growth in construction, healthcare, and accommodation despite a supply shock suggests wage pressure. Wage releases through 2026 will show whether wages are absorbing the shock or whether shortages persist at flat real wages.\nAI-related occupational shifts. Information & culture’s −13% decline is one early signal. Whether similar declines appear in administrative support, customer service, and basic content production through 2026–2027 will inform whether AI displacement is becoming visible in standard labour-market data."
+  },
+  {
+    "objectID": "bc_population_2019_2025.html#signals-to-watch-in-2026-and-after",
+    "href": "bc_population_2019_2025.html#signals-to-watch-in-2026-and-after",
+    "title": "How Canada’s federal immigration policy reshaped British Columbia’s population, 2019–2025",
+    "section": "Signals to watch in 2026 and after",
+    "text": "Signals to watch in 2026 and after\nA few signals are worth tracking over the next 12–24 months for anyone following the Canadian or BC population trend:\n\nFederal non-PR policy direction. Whether the 5%-of-population target holds, loosens, or tightens will dominate near-term population trajectories.\nQuarterly interprovincial flow. BC’s recent net losses to other provinces are a relatively new pattern; whether they persist through 2026 will affect working-age supply.\nSectoral wage data. Employment growth in construction, healthcare, and accommodation despite a supply shock suggests wage pressure. Wage releases through 2026 will show whether wages are absorbing the shock or whether shortages persist at flat real wages.\nAI-related occupational shifts. Information & culture’s −13% decline may be an early signal. Whether similar declines appear in administrative support, customer service, and basic content production through 2026–2027 will inform whether AI displacement is becoming visible in standard labour-market data."
   }
 ]

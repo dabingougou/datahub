@@ -1,0 +1,345 @@
+---
+title: "How Canada's federal immigration policy reshaped British Columbia's population, 2019–2025"
+author: ["Huibin Chang"]
+date: "2026-04-26"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-summary: "Show R code"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+{{< include templates/contact.qmd >}}
+
+::: {.callout-note collapse="false"}
+**TL;DR.** British Columbia's population peaked in early 2025 and has fallen since. The reason is not provincial—it is federal. Between 2019 and 2025, three of BC's four growth drivers (natural increase, interprovincial migration, and permanent-resident immigration) weakened or reversed. The fourth—non-permanent residents (non-PRs)—surged to record highs through 2023/24 and then fell after the federal government announced caps on temporary residents in March 2024. By the peak, non-PRs alone were responsible for two-thirds of BC's annual growth. When the cap removed that flow, no other component was large enough to hold the line. Canada as a whole shows the same pattern.
+:::
+
+## Three of four growth drivers weakened; non-permanent residents were the swing
+
+Population change in any province is the sum of four flows:
+
+- **Natural increase** = births minus deaths.
+- **Net international permanent residents (PRs)** = immigrants landing under the federal Immigration Levels Plan, net of emigrants and small adjustments.
+- **Net non-permanent residents (non-PRs)** = international students, temporary foreign workers, asylum claimants, and other temporary status holders, net of departures.
+- **Net interprovincial migration** = inflow from other provinces minus outflow to other provinces.
+
+```{r setup}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(scales)
+  library(lubridate)
+})
+proc_dir <- file.path("..", "data", "processed")
+
+theme_post <- function(base_size = 11) {
+  theme_minimal(base_size = base_size) +
+    theme(
+      plot.title = element_text(face = "bold", size = base_size + 1),
+      plot.subtitle = element_text(color = "grey30", size = base_size - 1),
+      plot.caption = element_text(color = "grey40", size = base_size - 2,
+                                  hjust = 0),
+      panel.grid.minor = element_blank(),
+      panel.grid.major.x = element_blank(),
+      legend.position = "top",
+      legend.title = element_blank(),
+      legend.text = element_text(size = base_size - 1)
+    )
+}
+```
+
+```{r fig-components, fig.width=8, fig.height=4}
+bc_comp <- read_csv(file.path(proc_dir, "bc_components_net.csv"),
+                    show_col_types = FALSE) %>%
+  mutate(
+    bucket = recode(bucket, "Net NPR" = "Net non-PR"),
+    bucket = factor(bucket, levels = c(
+      "Net non-PR", "Net international (PR)",
+      "Net interprovincial", "Natural increase")),
+    period = paste0(year_end - 1, "/", substr(year_end, 3, 4))
+  )
+
+palette_components <- c(
+  "Net non-PR" = "#d62728",
+  "Net international (PR)" = "#1f77b4",
+  "Net interprovincial" = "#2ca02c",
+  "Natural increase" = "#9467bd"
+)
+
+ggplot(bc_comp, aes(x = period, y = contribution / 1000, fill = bucket)) +
+  geom_col(position = position_stack(reverse = TRUE), width = 0.7) +
+  geom_hline(yintercept = 0, color = "black", linewidth = 0.4) +
+  scale_fill_manual(values = palette_components) +
+  scale_y_continuous(labels = label_comma(), breaks = pretty_breaks(8)) +
+  labs(
+    title = "BC components of population change, 2019/20–2024/25",
+    subtitle = "Annual net contribution by component, thousands of persons.",
+    x = NULL, y = "Thousand persons",
+    caption = "Source: Statistics Canada, Table 17-10-0008-01."
+  ) +
+  theme_post()
+```
+
+**Three of the four flows weakened. The fourth swung wildly:**
+
+- **Natural increase**: +3,900 (2019/20) → negative for three consecutive years → +500 (2024/25). BC's total fertility rate is below replacement; births and deaths are now roughly balanced.
+- **Interprovincial migration**: +26,000 (2021/22) → −4,100 (2023/24) → −2,400 (2024/25). Working-age households leaving BC on net for the first time in years. Cost-of-living and housing-affordability differentials with other provinces, particularly Alberta, are widely cited as contributing factors.
+- **Net international PRs**: stayed in a +30K to +70K range, in line with BC's allocation under the federal Immigration Levels Plan. The most stable of the four components.
+- **Net non-PRs**: −8,800 (2020/21, COVID exit) → +112,900 (2023/24 peak) → −12,600 (2024/25). The swing factor and the story below.
+
+## The 2024 federal cap reversed the largest single source of BC growth
+
+**The numbers.** Net non-PR change in BC went from −8,800 in 2020/21 (COVID-era exit) to a record +112,900 in 2023/24, and then to −12,600 in 2024/25. By the peak, non-PRs alone accounted for roughly two-thirds of BC's annual population growth. The Canada-wide pattern is the same in direction and larger in magnitude: net non-PR change at the national level swung from +671,525 (2022/23) to +781,075 (2023/24) and then −14,954 (2024/25).
+
+**The policy.** The shift was policy-driven. On March 21, 2024, Immigration Minister Marc Miller announced a target to bring non-permanent residents from about 6.2% of Canada's population in 2023 to 5% by 2027. The target was later reaffirmed in the October 2024 *2025–2027 Immigration Levels Plan*, with the timeline accelerated to end of 2026. Implementation has cut across study permits (with a federal cap on international students), post-graduation work permits, and temporary foreign worker intake. The 2024/25 numbers in the chart above are the first full-year reading of the new regime.
+
+**What it means going forward.** The implication for BC's near-term population path is that federal immigration policy now matters more than provincial economic conditions. If federal targets are loosened, the population path lifts. If they tighten further, the 2026 dip deepens.
+
+## BC and Canada populations peaked together in early 2025
+
+Indexed to 2019, BC's population trajectory ran modestly above Canada's, both peaked together in early 2025, and both have edged down since the federal non-PR cap was announced in March 2024. By contrast, the United States and India have continued growing through 2024; China's population is now declining (it peaked around 2022). The fact that BC's inflection is national, not BC-specific, and contrasts with the trajectories of other large economies reinforces the federal-policy reading.
+
+```{r fig-trajectory, fig.width=8, fig.height=4}
+# Quarterly BC and Canada
+bc_pop <- read_csv(file.path(proc_dir, "bc_population_quarterly.csv"),
+                   show_col_types = FALSE) %>%
+  filter(date >= ymd("2019-01-01")) %>%
+  mutate(geo = "BC")
+
+ca_pop <- read_csv(file.path(proc_dir, "canada_population_quarterly.csv"),
+                   show_col_types = FALSE) %>%
+  filter(date >= ymd("2019-01-01")) %>%
+  rename(val_norm = val) %>%
+  mutate(geo = "Canada")
+
+quarterly <- bind_rows(
+  bc_pop %>% select(date, val_norm, geo),
+  ca_pop
+) %>%
+  group_by(geo) %>% arrange(date) %>%
+  mutate(idx = val_norm / first(val_norm) * 100) %>%
+  ungroup()
+
+# Annual US, China, India from World Bank — index to 2019 = 100
+wb <- read_csv(file.path(proc_dir, "world_bank_pop.csv"),
+               show_col_types = FALSE) %>%
+  filter(country %in% c("United States", "China", "India"),
+         year >= 2019, !is.na(pop_total)) %>%
+  mutate(geo = recode(country,
+                      "United States" = "US",
+                      "China" = "China",
+                      "India" = "India"),
+         date = ymd(paste0(year, "-07-01"))) %>%
+  group_by(geo) %>% arrange(year) %>%
+  mutate(idx = pop_total / first(pop_total) * 100) %>%
+  ungroup() %>%
+  select(date, idx, geo)
+
+palette_pop <- c("BC" = "#1f77b4", "Canada" = "grey30",
+                 "US" = "#d62728", "China" = "#2ca02c", "India" = "#9467bd")
+
+policy_date <- ymd("2024-03-21")
+
+ggplot() +
+  geom_vline(xintercept = policy_date, color = "grey45",
+             linetype = "dashed", linewidth = 0.5) +
+  annotate("text", x = policy_date, y = 121,
+           label = "  Mar 21, 2024:\n  federal cap on\n  non-PRs announced",
+           hjust = 0, vjust = 1, size = 2.8, color = "grey25") +
+  geom_line(data = quarterly,
+            aes(x = date, y = idx, color = geo),
+            linewidth = 1.4) +
+  geom_line(data = wb,
+            aes(x = date, y = idx, color = geo),
+            linewidth = 0.8, linetype = "solid") +
+  geom_point(data = wb, aes(x = date, y = idx, color = geo), size = 1.5) +
+  scale_color_manual(values = palette_pop,
+                     breaks = c("BC", "Canada", "US", "China", "India")) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  guides(color = guide_legend(override.aes = list(linewidth = 1.6))) +
+  labs(
+    title = "Population trajectory: BC, Canada, US, China, India (2019 = 100)",
+    subtitle = "BC and Canada are quarterly; US, China, India are annual (World Bank).",
+    x = NULL, y = "Index (2019 = 100)",
+    caption = "Sources: Statistics Canada, Table 17-10-0009-01; World Bank Open Data, SP.POP.TOTL."
+  ) +
+  theme_post() +
+  theme(legend.text = element_text(size = 11),
+        legend.key.width = unit(1.5, "cm"))
+```
+
+## Construction and healthcare grew; retail and information cooled
+
+A 125,000-person swing in NPRs over a single year (peak to trough in BC) might be expected to depress employment in the sectors NPRs disproportionately fill. The reality is more nuanced. Total BC employment was approximately flat between January 2024 and early 2026 (+0.15%). Underneath that aggregate, sectoral employment shifted sharply.
+
+```{r fig-sectors, fig.width=8, fig.height=4.5}
+bc_ind <- read_csv(file.path(proc_dir, "bc_industry_change_2024_to_latest.csv"),
+                   show_col_types = FALSE) %>%
+  transmute(industry, geo = "BC", pct_change)
+
+ca_ind <- read_csv(file.path(proc_dir,
+                              "canada_industry_change_2024_to_latest.csv"),
+                   show_col_types = FALSE) %>%
+  transmute(industry, geo = "Canada", pct_change)
+
+drop_aggs <- c("Total employed, all industries",
+               "Goods-producing sector",
+               "Services-producing sector")
+
+both_ind <- bind_rows(bc_ind, ca_ind) %>%
+  filter(!industry %in% drop_aggs) %>%
+  mutate(industry = recode(industry,
+    "Forestry, fishing, mining, quarrying, oil and gas" = "Forestry/mining/oil",
+    "Professional, scientific and technical services" = "Professional & technical",
+    "Business, building and other support services" = "Business support",
+    "Other services (except public administration)" = "Other services",
+    "Wholesale and retail trade" = "Wholesale & retail",
+    "Information, culture and recreation" = "Information & culture",
+    "Accommodation and food services" = "Accommodation & food",
+    "Health care and social assistance" = "Health & social services",
+    "Transportation and warehousing" = "Transport & warehousing",
+    "Educational services" = "Education",
+    "Public administration" = "Public administration"))
+
+order_levels <- both_ind %>% filter(geo == "BC") %>%
+  arrange(pct_change) %>% pull(industry)
+
+both_ind <- both_ind %>%
+  mutate(industry = factor(industry, levels = order_levels))
+
+ggplot(both_ind, aes(x = pct_change, y = industry, fill = geo)) +
+  geom_col(position = position_dodge(width = 0.7), width = 0.65) +
+  geom_vline(xintercept = 0, color = "black", linewidth = 0.4) +
+  scale_x_continuous(labels = label_percent(accuracy = 1),
+                     breaks = pretty_breaks(8)) +
+  scale_fill_manual(values = c("BC" = "#1f77b4", "Canada" = "grey55")) +
+  labs(
+    title = "Employment change by industry, January 2024 to early 2026",
+    subtitle = "Seasonally adjusted, percent change. BC vs Canada.",
+    x = "Percent change in employment", y = NULL,
+    caption = "Source: Statistics Canada, Table 14-10-0355-01."
+  ) +
+  theme_post() +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.major.x = element_line(color = "grey90"))
+```
+
+**Sectors where BC outpaced Canada (BC ran hotter than the national pace):**
+
+- **Construction**: BC +14.5% vs Canada +2.9% — BC's standout sector, about 33,900 net jobs.
+- **Manufacturing**: BC +2.2% vs Canada −1.3% — BC bucked a national decline.
+- **Business support services**: BC +0.7% vs Canada −3.2%.
+- **Professional & technical services**: BC +4.6% vs Canada +2.6%.
+- **Accommodation & food**: BC +5.6% vs Canada +4.9%.
+
+**Sectors where BC lagged Canada (or cooled more deeply):**
+
+- **Forestry, mining, oil & gas**: BC −22.8% vs Canada +1.3% — BC's largest underperformance, off a small base.
+- **Information & culture**: BC −12.9% vs Canada +4.7% — Canada-wide this sector grew; BC cooled hard.
+- **Transport & warehousing**: BC −7.4% vs Canada +1.3%.
+- **Other services**: BC −5.5% vs Canada −1.0%.
+- **Wholesale & retail trade**: BC −4.4% vs Canada −0.4%.
+- **Health & social services**: BC +2.7% vs Canada +8.3% — BC grew but at roughly a third of the national pace; an aging-driven sector where BC is currently underabsorbing demand.
+
+The information & culture gap is worth flagging on its own. The category includes parts of media, broadcasting, and tech-adjacent occupations. BC's −13% decline against a +5% national gain may reflect both AI-related demand softening for some content roles and BC-specific cooling in tech employment after the post-2020 boom.
+
+For someone considering moving to BC, the sectors hiring most actively are skilled trades (construction), health care, hospitality, and professional services. The sectors absorbing fewer workers are retail, transport, and parts of tech and content production.
+
+## BC and Canada are both aging: working-age share down, senior share up
+
+Non-PR volatility is the near-term headline. Aging is the longer trend, and a global one.
+
+```{r fig-age, fig.width=8, fig.height=5.5}
+# BC from BC Stats
+bc_age <- read_csv(file.path(proc_dir, "bc_age_cohorts.csv"),
+                   show_col_types = FALSE) %>%
+  filter(year >= 2000, year <= 2025) %>%
+  transmute(year, geo = "BC",
+            wa_pct = pct_working_age * 100,
+            sr_pct = pct_seniors * 100)
+
+# Other countries from World Bank
+wb_age <- read_csv(file.path(proc_dir, "world_bank_pop.csv"),
+                   show_col_types = FALSE) %>%
+  filter(year >= 2000, year <= 2025, !is.na(pct_working_age)) %>%
+  mutate(geo = recode(country,
+                      "Canada" = "Canada",
+                      "United States" = "US",
+                      "China" = "China",
+                      "India" = "India")) %>%
+  transmute(year, geo, wa_pct = pct_working_age, sr_pct = pct_seniors)
+
+age_all <- bind_rows(bc_age, wb_age) %>%
+  pivot_longer(c(wa_pct, sr_pct), names_to = "metric", values_to = "pct") %>%
+  mutate(
+    geo = factor(geo, levels = c("BC", "Canada", "US", "China", "India")),
+    metric = recode(metric,
+                    wa_pct = "Working-age share (15-64)",
+                    sr_pct = "Senior share (65+)"),
+    metric = factor(metric, levels = c("Working-age share (15-64)",
+                                       "Senior share (65+)"))
+  )
+
+palette_geo <- c("BC" = "#1f77b4", "Canada" = "grey30",
+                 "US" = "#d62728", "China" = "#2ca02c", "India" = "#9467bd")
+
+ggplot(age_all, aes(x = year, y = pct, color = geo)) +
+  geom_line(linewidth = 0.9) +
+  facet_wrap(~ metric, ncol = 1, scales = "free_y") +
+  scale_color_manual(values = palette_geo,
+                     breaks = c("BC", "Canada", "US", "China", "India")) +
+  scale_y_continuous(labels = label_percent(scale = 1, accuracy = 1),
+                     breaks = pretty_breaks(6)) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  guides(color = guide_legend(override.aes = list(linewidth = 1.8))) +
+  labs(
+    title = "Age structure: BC, Canada, US, China, India, 2000–2024",
+    subtitle = "Top: working-age share (15–64). Bottom: senior share (65+).",
+    x = NULL, y = "Share of total population",
+    caption = "Sources: BC Stats Table 3; World Bank Open Data, SP.POP.1564.TO.ZS and SP.POP.65UP.TO.ZS."
+  ) +
+  theme_post() +
+  theme(strip.text = element_text(face = "bold", size = 10),
+        legend.text = element_text(size = 11),
+        legend.key.width = unit(1.5, "cm"))
+```
+
+BC's working-age share (population aged 15–64) peaked around 2024 at about 67% and is projected to fall to roughly 65% by the late 2030s. The senior share (65+) rises from 21% to 24% over the same period. BC tracks slightly above Canada on working-age share and slightly below on senior share, but the patterns are nearly identical. The United States runs a few points lower on working-age share than Canada and slightly higher on seniors. China is aging quickly: its senior share has risen from about 7% in 2000 to 14% in 2024 and continues to climb. India remains structurally young (working-age share around 65%, senior share under 8%) but is starting to age.
+
+The implication for labour supply is that even if international and interprovincial flows recover, the underlying population structure is becoming more demographically constrained on the supply side. Immigration policy is the only large lever that can offset this, and that lever is currently being pulled in the opposite direction.
+
+## BC Stats projects a 2026 dip and gradual recovery to 2035
+
+BC Stats' provincial projections (published 2024, covering 2024–2046) expect total BC population to remain roughly flat in 2025, decline in 2026 (−45,000 from the 2024 peak), then resume gradual growth—reaching about 5.86 million by 2030 and 6.18 million by 2035. Median age rises from 40.9 (2024) to 46.4 (2046).
+
+The trajectory is conditional on federal non-PR policy stabilising near the announced 5% target and PR landings remaining at planned levels. This is now the largest single source of uncertainty in provincial population forecasting.
+
+## Signals to watch in 2026 and after
+
+A few signals are worth tracking over the next 12–24 months for anyone following the Canadian or BC population trend:
+
+1. **Federal non-PR policy direction.** Whether the 5%-of-population target holds, loosens, or tightens will dominate near-term population trajectories.
+2. **Quarterly interprovincial flow.** BC's recent net losses to other provinces are a relatively new pattern; whether they persist through 2026 will affect working-age supply.
+3. **Sectoral wage data.** Employment growth in construction, healthcare, and accommodation despite a supply shock suggests wage pressure. Wage releases through 2026 will show whether wages are absorbing the shock or whether shortages persist at flat real wages.
+4. **AI-related occupational shifts.** Information & culture's −13% decline may be an early signal. Whether similar declines appear in administrative support, customer service, and basic content production through 2026–2027 will inform whether AI displacement is becoming visible in standard labour-market data.
+
+## Sources and methods
+
+**Data.** All figures are computed from public sources:
+
+- Statistics Canada, [Table 17-10-0008-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000801): Estimates of the components of demographic growth, annual.
+- Statistics Canada, [Table 17-10-0009-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901): Population estimates, quarterly.
+- Statistics Canada, [Table 17-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501): Population estimates by age and sex, annual.
+- Statistics Canada, [Table 14-10-0355-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410035501): Employment by industry, monthly, by province (LFS).
+- BC Stats, [British Columbia Population: 2023 Estimates and 2024–2046 Projections](https://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/population/population-projections), Tables 1 and 3.
+- World Bank Open Data: total population (`SP.POP.TOTL`), working-age share (`SP.POP.1564.TO.ZS`), and senior share (`SP.POP.65UP.TO.ZS`). Pulled via the [`wbstats` R package](https://cran.r-project.org/package=wbstats).
+- Immigration, Refugees and Citizenship Canada, [*2025–2027 Immigration Levels Plan*](https://www.canada.ca/en/immigration-refugees-citizenship/news/2024/10/20252027-immigration-levels-plan.html) (October 24, 2024). The 5%-of-population target for non-permanent residents was first announced by Minister Marc Miller on [March 21, 2024](https://www.cbc.ca/news/politics/canada-targets-decrease-temporary-residents-population-1.7151107).
+
+**Code and processed data.** R scripts and processed CSVs are kept in a project repository; reach out if you would like access for replication.
+
+**Disclaimer.** Personal data analysis using public sources. Not affiliated with any employer; views are my own.

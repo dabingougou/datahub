@@ -1,0 +1,1480 @@
+date,industry,employment_thousands
+2019-01-01,"Total employed, all industries",2669.3
+2019-01-01,Goods-producing sector,508.1
+2019-01-01,Agriculture,24.6
+2019-01-01,"Forestry, fishing, mining, quarrying, oil and gas",49.4
+2019-01-01,Construction,247.6
+2019-01-01,Manufacturing,172.4
+2019-01-01,Services-producing sector,2161.2
+2019-01-01,Wholesale and retail trade,407.3
+2019-01-01,Transportation and warehousing,149.2
+2019-01-01,"Professional, scientific and technical services",238.5
+2019-01-01,"Business, building and other support services",120.8
+2019-01-01,Educational services,165.8
+2019-01-01,Health care and social assistance,324.9
+2019-01-01,"Information, culture and recreation",136.1
+2019-01-01,Accommodation and food services,213.3
+2019-01-01,Other services (except public administration),123.5
+2019-01-01,Public administration,113.2
+2019-02-01,"Total employed, all industries",2677.3
+2019-02-01,Goods-producing sector,510.5
+2019-02-01,Agriculture,25.4
+2019-02-01,"Forestry, fishing, mining, quarrying, oil and gas",50.4
+2019-02-01,Construction,247.4
+2019-02-01,Manufacturing,173.6
+2019-02-01,Services-producing sector,2166.8
+2019-02-01,Wholesale and retail trade,407.4
+2019-02-01,Transportation and warehousing,147.9
+2019-02-01,"Professional, scientific and technical services",237.2
+2019-02-01,"Business, building and other support services",125.2
+2019-02-01,Educational services,171.6
+2019-02-01,Health care and social assistance,323.2
+2019-02-01,"Information, culture and recreation",140.4
+2019-02-01,Accommodation and food services,209.9
+2019-02-01,Other services (except public administration),123.1
+2019-02-01,Public administration,114.2
+2019-03-01,"Total employed, all industries",2671.5
+2019-03-01,Goods-producing sector,502.2
+2019-03-01,Agriculture,22.2
+2019-03-01,"Forestry, fishing, mining, quarrying, oil and gas",49.1
+2019-03-01,Construction,246.9
+2019-03-01,Manufacturing,170.6
+2019-03-01,Services-producing sector,2169.3
+2019-03-01,Wholesale and retail trade,413.9
+2019-03-01,Transportation and warehousing,149.7
+2019-03-01,"Professional, scientific and technical services",244.6
+2019-03-01,"Business, building and other support services",119.7
+2019-03-01,Educational services,173.9
+2019-03-01,Health care and social assistance,320.6
+2019-03-01,"Information, culture and recreation",138.6
+2019-03-01,Accommodation and food services,198.9
+2019-03-01,Other services (except public administration),123
+2019-03-01,Public administration,119.3
+2019-04-01,"Total employed, all industries",2678.7
+2019-04-01,Goods-producing sector,515.3
+2019-04-01,Agriculture,23.6
+2019-04-01,"Forestry, fishing, mining, quarrying, oil and gas",49.6
+2019-04-01,Construction,256.2
+2019-04-01,Manufacturing,174
+2019-04-01,Services-producing sector,2163.4
+2019-04-01,Wholesale and retail trade,412.6
+2019-04-01,Transportation and warehousing,146.9
+2019-04-01,"Professional, scientific and technical services",239.5
+2019-04-01,"Business, building and other support services",119
+2019-04-01,Educational services,170.8
+2019-04-01,Health care and social assistance,322.6
+2019-04-01,"Information, culture and recreation",136.4
+2019-04-01,Accommodation and food services,204.9
+2019-04-01,Other services (except public administration),123.8
+2019-04-01,Public administration,120.8
+2019-05-01,"Total employed, all industries",2698.5
+2019-05-01,Goods-producing sector,528.5
+2019-05-01,Agriculture,25.5
+2019-05-01,"Forestry, fishing, mining, quarrying, oil and gas",46.6
+2019-05-01,Construction,256.7
+2019-05-01,Manufacturing,186.2
+2019-05-01,Services-producing sector,2170
+2019-05-01,Wholesale and retail trade,425.6
+2019-05-01,Transportation and warehousing,148.6
+2019-05-01,"Professional, scientific and technical services",238.4
+2019-05-01,"Business, building and other support services",116.9
+2019-05-01,Educational services,173.7
+2019-05-01,Health care and social assistance,327.2
+2019-05-01,"Information, culture and recreation",136.9
+2019-05-01,Accommodation and food services,192.6
+2019-05-01,Other services (except public administration),125.1
+2019-05-01,Public administration,121.1
+2019-06-01,"Total employed, all industries",2695.3
+2019-06-01,Goods-producing sector,514
+2019-06-01,Agriculture,24.3
+2019-06-01,"Forestry, fishing, mining, quarrying, oil and gas",44.2
+2019-06-01,Construction,254.6
+2019-06-01,Manufacturing,178.1
+2019-06-01,Services-producing sector,2181.2
+2019-06-01,Wholesale and retail trade,432.4
+2019-06-01,Transportation and warehousing,149.5
+2019-06-01,"Professional, scientific and technical services",234.8
+2019-06-01,"Business, building and other support services",112.7
+2019-06-01,Educational services,176
+2019-06-01,Health care and social assistance,337.4
+2019-06-01,"Information, culture and recreation",138.9
+2019-06-01,Accommodation and food services,191.9
+2019-06-01,Other services (except public administration),118
+2019-06-01,Public administration,120.5
+2019-07-01,"Total employed, all industries",2685.4
+2019-07-01,Goods-producing sector,506.8
+2019-07-01,Agriculture,23.5
+2019-07-01,"Forestry, fishing, mining, quarrying, oil and gas",43.4
+2019-07-01,Construction,253.9
+2019-07-01,Manufacturing,174
+2019-07-01,Services-producing sector,2178.5
+2019-07-01,Wholesale and retail trade,430.5
+2019-07-01,Transportation and warehousing,144.4
+2019-07-01,"Professional, scientific and technical services",231
+2019-07-01,"Business, building and other support services",114.3
+2019-07-01,Educational services,180.5
+2019-07-01,Health care and social assistance,338.1
+2019-07-01,"Information, culture and recreation",133.6
+2019-07-01,Accommodation and food services,197.4
+2019-07-01,Other services (except public administration),120.4
+2019-07-01,Public administration,121.2
+2019-08-01,"Total employed, all industries",2684.2
+2019-08-01,Goods-producing sector,507.6
+2019-08-01,Agriculture,24.4
+2019-08-01,"Forestry, fishing, mining, quarrying, oil and gas",45
+2019-08-01,Construction,254
+2019-08-01,Manufacturing,170.4
+2019-08-01,Services-producing sector,2176.6
+2019-08-01,Wholesale and retail trade,427.7
+2019-08-01,Transportation and warehousing,142
+2019-08-01,"Professional, scientific and technical services",244.2
+2019-08-01,"Business, building and other support services",113.3
+2019-08-01,Educational services,180.7
+2019-08-01,Health care and social assistance,333.1
+2019-08-01,"Information, culture and recreation",131.7
+2019-08-01,Accommodation and food services,196.8
+2019-08-01,Other services (except public administration),117.4
+2019-08-01,Public administration,123.9
+2019-09-01,"Total employed, all industries",2669.8
+2019-09-01,Goods-producing sector,499.5
+2019-09-01,Agriculture,24.7
+2019-09-01,"Forestry, fishing, mining, quarrying, oil and gas",42
+2019-09-01,Construction,250
+2019-09-01,Manufacturing,169.7
+2019-09-01,Services-producing sector,2170.3
+2019-09-01,Wholesale and retail trade,423.6
+2019-09-01,Transportation and warehousing,146.2
+2019-09-01,"Professional, scientific and technical services",244.8
+2019-09-01,"Business, building and other support services",114.1
+2019-09-01,Educational services,181.8
+2019-09-01,Health care and social assistance,333.9
+2019-09-01,"Information, culture and recreation",127.6
+2019-09-01,Accommodation and food services,199.8
+2019-09-01,Other services (except public administration),110.1
+2019-09-01,Public administration,120.9
+2019-10-01,"Total employed, all industries",2689.7
+2019-10-01,Goods-producing sector,503
+2019-10-01,Agriculture,25.7
+2019-10-01,"Forestry, fishing, mining, quarrying, oil and gas",44.9
+2019-10-01,Construction,253.2
+2019-10-01,Manufacturing,166.3
+2019-10-01,Services-producing sector,2186.8
+2019-10-01,Wholesale and retail trade,426.3
+2019-10-01,Transportation and warehousing,146.5
+2019-10-01,"Professional, scientific and technical services",242.5
+2019-10-01,"Business, building and other support services",112
+2019-10-01,Educational services,181
+2019-10-01,Health care and social assistance,333.1
+2019-10-01,"Information, culture and recreation",124
+2019-10-01,Accommodation and food services,216.4
+2019-10-01,Other services (except public administration),111.2
+2019-10-01,Public administration,126
+2019-11-01,"Total employed, all industries",2676
+2019-11-01,Goods-producing sector,504.4
+2019-11-01,Agriculture,24.6
+2019-11-01,"Forestry, fishing, mining, quarrying, oil and gas",46.8
+2019-11-01,Construction,254.2
+2019-11-01,Manufacturing,165.1
+2019-11-01,Services-producing sector,2171.6
+2019-11-01,Wholesale and retail trade,422.9
+2019-11-01,Transportation and warehousing,142.4
+2019-11-01,"Professional, scientific and technical services",242.8
+2019-11-01,"Business, building and other support services",112.1
+2019-11-01,Educational services,184.3
+2019-11-01,Health care and social assistance,329.8
+2019-11-01,"Information, culture and recreation",126.2
+2019-11-01,Accommodation and food services,202.9
+2019-11-01,Other services (except public administration),111.6
+2019-11-01,Public administration,122.8
+2019-12-01,"Total employed, all industries",2680.7
+2019-12-01,Goods-producing sector,505.2
+2019-12-01,Agriculture,23.9
+2019-12-01,"Forestry, fishing, mining, quarrying, oil and gas",44.4
+2019-12-01,Construction,261.4
+2019-12-01,Manufacturing,161.2
+2019-12-01,Services-producing sector,2175.5
+2019-12-01,Wholesale and retail trade,424
+2019-12-01,Transportation and warehousing,143.5
+2019-12-01,"Professional, scientific and technical services",244.1
+2019-12-01,"Business, building and other support services",111.5
+2019-12-01,Educational services,180.6
+2019-12-01,Health care and social assistance,333.1
+2019-12-01,"Information, culture and recreation",126.9
+2019-12-01,Accommodation and food services,209.9
+2019-12-01,Other services (except public administration),113.4
+2019-12-01,Public administration,118.5
+2020-01-01,"Total employed, all industries",2681.3
+2020-01-01,Goods-producing sector,514.1
+2020-01-01,Agriculture,25.9
+2020-01-01,"Forestry, fishing, mining, quarrying, oil and gas",45.4
+2020-01-01,Construction,259.2
+2020-01-01,Manufacturing,169
+2020-01-01,Services-producing sector,2167.2
+2020-01-01,Wholesale and retail trade,430
+2020-01-01,Transportation and warehousing,144.3
+2020-01-01,"Professional, scientific and technical services",243.6
+2020-01-01,"Business, building and other support services",113.4
+2020-01-01,Educational services,182.4
+2020-01-01,Health care and social assistance,331.6
+2020-01-01,"Information, culture and recreation",123.4
+2020-01-01,Accommodation and food services,202.8
+2020-01-01,Other services (except public administration),108.4
+2020-01-01,Public administration,114.3
+2020-02-01,"Total employed, all industries",2678.8
+2020-02-01,Goods-producing sector,507.7
+2020-02-01,Agriculture,24.4
+2020-02-01,"Forestry, fishing, mining, quarrying, oil and gas",40.6
+2020-02-01,Construction,264.8
+2020-02-01,Manufacturing,162
+2020-02-01,Services-producing sector,2171.1
+2020-02-01,Wholesale and retail trade,434.9
+2020-02-01,Transportation and warehousing,144.9
+2020-02-01,"Professional, scientific and technical services",237
+2020-02-01,"Business, building and other support services",115.4
+2020-02-01,Educational services,174
+2020-02-01,Health care and social assistance,334.8
+2020-02-01,"Information, culture and recreation",121.3
+2020-02-01,Accommodation and food services,207.5
+2020-02-01,Other services (except public administration),109.3
+2020-02-01,Public administration,114.4
+2020-03-01,"Total employed, all industries",2503.2
+2020-03-01,Goods-producing sector,505.3
+2020-03-01,Agriculture,26.7
+2020-03-01,"Forestry, fishing, mining, quarrying, oil and gas",42.7
+2020-03-01,Construction,248.8
+2020-03-01,Manufacturing,169.9
+2020-03-01,Services-producing sector,1997.9
+2020-03-01,Wholesale and retail trade,388.4
+2020-03-01,Transportation and warehousing,134.4
+2020-03-01,"Professional, scientific and technical services",236.2
+2020-03-01,"Business, building and other support services",94.7
+2020-03-01,Educational services,160.3
+2020-03-01,Health care and social assistance,323.5
+2020-03-01,"Information, culture and recreation",101.5
+2020-03-01,Accommodation and food services,163.4
+2020-03-01,Other services (except public administration),108.1
+2020-03-01,Public administration,118.4
+2020-04-01,"Total employed, all industries",2247.3
+2020-04-01,Goods-producing sector,458.9
+2020-04-01,Agriculture,22
+2020-04-01,"Forestry, fishing, mining, quarrying, oil and gas",41
+2020-04-01,Construction,217.4
+2020-04-01,Manufacturing,159.6
+2020-04-01,Services-producing sector,1788.3
+2020-04-01,Wholesale and retail trade,340.1
+2020-04-01,Transportation and warehousing,126.7
+2020-04-01,"Professional, scientific and technical services",237.6
+2020-04-01,"Business, building and other support services",82.3
+2020-04-01,Educational services,156.2
+2020-04-01,Health care and social assistance,307.7
+2020-04-01,"Information, culture and recreation",86.4
+2020-04-01,Accommodation and food services,91.3
+2020-04-01,Other services (except public administration),76.6
+2020-04-01,Public administration,117
+2020-05-01,"Total employed, all industries",2301.2
+2020-05-01,Goods-producing sector,464.5
+2020-05-01,Agriculture,25.7
+2020-05-01,"Forestry, fishing, mining, quarrying, oil and gas",38.1
+2020-05-01,Construction,219.3
+2020-05-01,Manufacturing,163
+2020-05-01,Services-producing sector,1836.6
+2020-05-01,Wholesale and retail trade,357.8
+2020-05-01,Transportation and warehousing,123.4
+2020-05-01,"Professional, scientific and technical services",233.5
+2020-05-01,"Business, building and other support services",81.5
+2020-05-01,Educational services,170.6
+2020-05-01,Health care and social assistance,305.2
+2020-05-01,"Information, culture and recreation",93.3
+2020-05-01,Accommodation and food services,106.9
+2020-05-01,Other services (except public administration),79.4
+2020-05-01,Public administration,118
+2020-06-01,"Total employed, all industries",2429.6
+2020-06-01,Goods-producing sector,466.4
+2020-06-01,Agriculture,29.1
+2020-06-01,"Forestry, fishing, mining, quarrying, oil and gas",40.3
+2020-06-01,Construction,222.9
+2020-06-01,Manufacturing,154.2
+2020-06-01,Services-producing sector,1963.2
+2020-06-01,Wholesale and retail trade,364.8
+2020-06-01,Transportation and warehousing,126.5
+2020-06-01,"Professional, scientific and technical services",242.6
+2020-06-01,"Business, building and other support services",87.7
+2020-06-01,Educational services,171.1
+2020-06-01,Health care and social assistance,321.1
+2020-06-01,"Information, culture and recreation",96.7
+2020-06-01,Accommodation and food services,175.1
+2020-06-01,Other services (except public administration),86.4
+2020-06-01,Public administration,120.8
+2020-07-01,"Total employed, all industries",2500.5
+2020-07-01,Goods-producing sector,470.2
+2020-07-01,Agriculture,24.8
+2020-07-01,"Forestry, fishing, mining, quarrying, oil and gas",39.6
+2020-07-01,Construction,218.6
+2020-07-01,Manufacturing,168.6
+2020-07-01,Services-producing sector,2030.3
+2020-07-01,Wholesale and retail trade,392.7
+2020-07-01,Transportation and warehousing,130.9
+2020-07-01,"Professional, scientific and technical services",247.6
+2020-07-01,"Business, building and other support services",87.1
+2020-07-01,Educational services,158.2
+2020-07-01,Health care and social assistance,324.5
+2020-07-01,"Information, culture and recreation",103.4
+2020-07-01,Accommodation and food services,199
+2020-07-01,Other services (except public administration),93.6
+2020-07-01,Public administration,120.7
+2020-08-01,"Total employed, all industries",2519
+2020-08-01,Goods-producing sector,494.6
+2020-08-01,Agriculture,32.9
+2020-08-01,"Forestry, fishing, mining, quarrying, oil and gas",39.5
+2020-08-01,Construction,226.7
+2020-08-01,Manufacturing,174.8
+2020-08-01,Services-producing sector,2024.4
+2020-08-01,Wholesale and retail trade,397.4
+2020-08-01,Transportation and warehousing,132.2
+2020-08-01,"Professional, scientific and technical services",245
+2020-08-01,"Business, building and other support services",86
+2020-08-01,Educational services,154.9
+2020-08-01,Health care and social assistance,313.3
+2020-08-01,"Information, culture and recreation",94.7
+2020-08-01,Accommodation and food services,201.4
+2020-08-01,Other services (except public administration),102
+2020-08-01,Public administration,123.2
+2020-09-01,"Total employed, all industries",2586.3
+2020-09-01,Goods-producing sector,489.5
+2020-09-01,Agriculture,30.5
+2020-09-01,"Forestry, fishing, mining, quarrying, oil and gas",39.9
+2020-09-01,Construction,219.4
+2020-09-01,Manufacturing,179.5
+2020-09-01,Services-producing sector,2096.9
+2020-09-01,Wholesale and retail trade,397.7
+2020-09-01,Transportation and warehousing,134.5
+2020-09-01,"Professional, scientific and technical services",245.9
+2020-09-01,"Business, building and other support services",103.5
+2020-09-01,Educational services,179.8
+2020-09-01,Health care and social assistance,321.2
+2020-09-01,"Information, culture and recreation",117.5
+2020-09-01,Accommodation and food services,191.2
+2020-09-01,Other services (except public administration),104.8
+2020-09-01,Public administration,125.5
+2020-10-01,"Total employed, all industries",2619.4
+2020-10-01,Goods-producing sector,490.1
+2020-10-01,Agriculture,34.8
+2020-10-01,"Forestry, fishing, mining, quarrying, oil and gas",43.8
+2020-10-01,Construction,213.4
+2020-10-01,Manufacturing,178.5
+2020-10-01,Services-producing sector,2129.3
+2020-10-01,Wholesale and retail trade,395.6
+2020-10-01,Transportation and warehousing,133.9
+2020-10-01,"Professional, scientific and technical services",250.3
+2020-10-01,"Business, building and other support services",101.5
+2020-10-01,Educational services,185.1
+2020-10-01,Health care and social assistance,335.8
+2020-10-01,"Information, culture and recreation",124.2
+2020-10-01,Accommodation and food services,193.1
+2020-10-01,Other services (except public administration),106.2
+2020-10-01,Public administration,126.9
+2020-11-01,"Total employed, all industries",2635.2
+2020-11-01,Goods-producing sector,495.4
+2020-11-01,Agriculture,34.2
+2020-11-01,"Forestry, fishing, mining, quarrying, oil and gas",48.2
+2020-11-01,Construction,219.9
+2020-11-01,Manufacturing,175.3
+2020-11-01,Services-producing sector,2139.8
+2020-11-01,Wholesale and retail trade,398.2
+2020-11-01,Transportation and warehousing,145.7
+2020-11-01,"Professional, scientific and technical services",250.5
+2020-11-01,"Business, building and other support services",107.1
+2020-11-01,Educational services,186.6
+2020-11-01,Health care and social assistance,331
+2020-11-01,"Information, culture and recreation",117.1
+2020-11-01,Accommodation and food services,194.3
+2020-11-01,Other services (except public administration),109.7
+2020-11-01,Public administration,128.4
+2020-12-01,"Total employed, all industries",2635.1
+2020-12-01,Goods-producing sector,511.8
+2020-12-01,Agriculture,29.1
+2020-12-01,"Forestry, fishing, mining, quarrying, oil and gas",49.4
+2020-12-01,Construction,234.4
+2020-12-01,Manufacturing,181
+2020-12-01,Services-producing sector,2123.3
+2020-12-01,Wholesale and retail trade,392.2
+2020-12-01,Transportation and warehousing,141.9
+2020-12-01,"Professional, scientific and technical services",251.8
+2020-12-01,"Business, building and other support services",110.2
+2020-12-01,Educational services,189.4
+2020-12-01,Health care and social assistance,333.8
+2020-12-01,"Information, culture and recreation",109.4
+2020-12-01,Accommodation and food services,187.8
+2020-12-01,Other services (except public administration),105.4
+2020-12-01,Public administration,132.4
+2021-01-01,"Total employed, all industries",2647
+2021-01-01,Goods-producing sector,508.6
+2021-01-01,Agriculture,27
+2021-01-01,"Forestry, fishing, mining, quarrying, oil and gas",48.9
+2021-01-01,Construction,235.5
+2021-01-01,Manufacturing,176.8
+2021-01-01,Services-producing sector,2138.4
+2021-01-01,Wholesale and retail trade,390.2
+2021-01-01,Transportation and warehousing,144.6
+2021-01-01,"Professional, scientific and technical services",262.2
+2021-01-01,"Business, building and other support services",106.1
+2021-01-01,Educational services,182.9
+2021-01-01,Health care and social assistance,338.6
+2021-01-01,"Information, culture and recreation",120.5
+2021-01-01,Accommodation and food services,179
+2021-01-01,Other services (except public administration),110
+2021-01-01,Public administration,136.3
+2021-02-01,"Total employed, all industries",2661.4
+2021-02-01,Goods-producing sector,493.8
+2021-02-01,Agriculture,25
+2021-02-01,"Forestry, fishing, mining, quarrying, oil and gas",49.8
+2021-02-01,Construction,230.6
+2021-02-01,Manufacturing,168.5
+2021-02-01,Services-producing sector,2167.6
+2021-02-01,Wholesale and retail trade,397.8
+2021-02-01,Transportation and warehousing,149.6
+2021-02-01,"Professional, scientific and technical services",263.5
+2021-02-01,"Business, building and other support services",104.6
+2021-02-01,Educational services,186.9
+2021-02-01,Health care and social assistance,338.8
+2021-02-01,"Information, culture and recreation",116.4
+2021-02-01,Accommodation and food services,186.1
+2021-02-01,Other services (except public administration),115.2
+2021-02-01,Public administration,139.2
+2021-03-01,"Total employed, all industries",2681.8
+2021-03-01,Goods-producing sector,506.8
+2021-03-01,Agriculture,25.3
+2021-03-01,"Forestry, fishing, mining, quarrying, oil and gas",50
+2021-03-01,Construction,233.9
+2021-03-01,Manufacturing,178.9
+2021-03-01,Services-producing sector,2175
+2021-03-01,Wholesale and retail trade,394.1
+2021-03-01,Transportation and warehousing,145.9
+2021-03-01,"Professional, scientific and technical services",265.4
+2021-03-01,"Business, building and other support services",104.8
+2021-03-01,Educational services,188.4
+2021-03-01,Health care and social assistance,349.1
+2021-03-01,"Information, culture and recreation",127.1
+2021-03-01,Accommodation and food services,185.8
+2021-03-01,Other services (except public administration),108.9
+2021-03-01,Public administration,134.8
+2021-04-01,"Total employed, all industries",2645.8
+2021-04-01,Goods-producing sector,517
+2021-04-01,Agriculture,25.5
+2021-04-01,"Forestry, fishing, mining, quarrying, oil and gas",50.7
+2021-04-01,Construction,231.2
+2021-04-01,Manufacturing,189.9
+2021-04-01,Services-producing sector,2128.8
+2021-04-01,Wholesale and retail trade,386.6
+2021-04-01,Transportation and warehousing,140.7
+2021-04-01,"Professional, scientific and technical services",271.3
+2021-04-01,"Business, building and other support services",107
+2021-04-01,Educational services,187
+2021-04-01,Health care and social assistance,344.9
+2021-04-01,"Information, culture and recreation",121.3
+2021-04-01,Accommodation and food services,153.1
+2021-04-01,Other services (except public administration),108.2
+2021-04-01,Public administration,132.8
+2021-05-01,"Total employed, all industries",2651
+2021-05-01,Goods-producing sector,504.9
+2021-05-01,Agriculture,20.1
+2021-05-01,"Forestry, fishing, mining, quarrying, oil and gas",54.9
+2021-05-01,Construction,228.5
+2021-05-01,Manufacturing,181.2
+2021-05-01,Services-producing sector,2146.1
+2021-05-01,Wholesale and retail trade,390.9
+2021-05-01,Transportation and warehousing,146.7
+2021-05-01,"Professional, scientific and technical services",269.1
+2021-05-01,"Business, building and other support services",104
+2021-05-01,Educational services,186.5
+2021-05-01,Health care and social assistance,344.2
+2021-05-01,"Information, culture and recreation",125.8
+2021-05-01,Accommodation and food services,166.9
+2021-05-01,Other services (except public administration),110.5
+2021-05-01,Public administration,132.9
+2021-06-01,"Total employed, all industries",2684.9
+2021-06-01,Goods-producing sector,491
+2021-06-01,Agriculture,20.1
+2021-06-01,"Forestry, fishing, mining, quarrying, oil and gas",50.5
+2021-06-01,Construction,219.7
+2021-06-01,Manufacturing,180.3
+2021-06-01,Services-producing sector,2193.9
+2021-06-01,Wholesale and retail trade,399.6
+2021-06-01,Transportation and warehousing,146.2
+2021-06-01,"Professional, scientific and technical services",276.4
+2021-06-01,"Business, building and other support services",102.1
+2021-06-01,Educational services,187.2
+2021-06-01,Health care and social assistance,351.1
+2021-06-01,"Information, culture and recreation",130.1
+2021-06-01,Accommodation and food services,178.7
+2021-06-01,Other services (except public administration),114.7
+2021-06-01,Public administration,137.2
+2021-07-01,"Total employed, all industries",2694.7
+2021-07-01,Goods-producing sector,497.9
+2021-07-01,Agriculture,18.8
+2021-07-01,"Forestry, fishing, mining, quarrying, oil and gas",51.7
+2021-07-01,Construction,235.6
+2021-07-01,Manufacturing,174.8
+2021-07-01,Services-producing sector,2196.8
+2021-07-01,Wholesale and retail trade,394.9
+2021-07-01,Transportation and warehousing,145.5
+2021-07-01,"Professional, scientific and technical services",273.6
+2021-07-01,"Business, building and other support services",105.1
+2021-07-01,Educational services,189.2
+2021-07-01,Health care and social assistance,356.5
+2021-07-01,"Information, culture and recreation",119.7
+2021-07-01,Accommodation and food services,180.9
+2021-07-01,Other services (except public administration),117.9
+2021-07-01,Public administration,137.9
+2021-08-01,"Total employed, all industries",2699.7
+2021-08-01,Goods-producing sector,502.7
+2021-08-01,Agriculture,15.5
+2021-08-01,"Forestry, fishing, mining, quarrying, oil and gas",45.2
+2021-08-01,Construction,235.9
+2021-08-01,Manufacturing,192.5
+2021-08-01,Services-producing sector,2197
+2021-08-01,Wholesale and retail trade,406.9
+2021-08-01,Transportation and warehousing,144.3
+2021-08-01,"Professional, scientific and technical services",269.1
+2021-08-01,"Business, building and other support services",97.2
+2021-08-01,Educational services,180
+2021-08-01,Health care and social assistance,357.7
+2021-08-01,"Information, culture and recreation",131.8
+2021-08-01,Accommodation and food services,188.8
+2021-08-01,Other services (except public administration),112.1
+2021-08-01,Public administration,134.9
+2021-09-01,"Total employed, all industries",2706.6
+2021-09-01,Goods-producing sector,509.3
+2021-09-01,Agriculture,17.6
+2021-09-01,"Forestry, fishing, mining, quarrying, oil and gas",48.7
+2021-09-01,Construction,234.3
+2021-09-01,Manufacturing,193.1
+2021-09-01,Services-producing sector,2197.3
+2021-09-01,Wholesale and retail trade,400.9
+2021-09-01,Transportation and warehousing,145.9
+2021-09-01,"Professional, scientific and technical services",262.7
+2021-09-01,"Business, building and other support services",94.6
+2021-09-01,Educational services,188.1
+2021-09-01,Health care and social assistance,355.2
+2021-09-01,"Information, culture and recreation",136.8
+2021-09-01,Accommodation and food services,190.2
+2021-09-01,Other services (except public administration),108.5
+2021-09-01,Public administration,145.5
+2021-10-01,"Total employed, all industries",2704.3
+2021-10-01,Goods-producing sector,504.2
+2021-10-01,Agriculture,19.7
+2021-10-01,"Forestry, fishing, mining, quarrying, oil and gas",46.7
+2021-10-01,Construction,232.1
+2021-10-01,Manufacturing,190
+2021-10-01,Services-producing sector,2200.1
+2021-10-01,Wholesale and retail trade,417.5
+2021-10-01,Transportation and warehousing,147.9
+2021-10-01,"Professional, scientific and technical services",257
+2021-10-01,"Business, building and other support services",91.5
+2021-10-01,Educational services,183.8
+2021-10-01,Health care and social assistance,361.7
+2021-10-01,"Information, culture and recreation",138.4
+2021-10-01,Accommodation and food services,182.8
+2021-10-01,Other services (except public administration),104.3
+2021-10-01,Public administration,144.1
+2021-11-01,"Total employed, all industries",2724.5
+2021-11-01,Goods-producing sector,502
+2021-11-01,Agriculture,21.1
+2021-11-01,"Forestry, fishing, mining, quarrying, oil and gas",42.6
+2021-11-01,Construction,217.3
+2021-11-01,Manufacturing,205.8
+2021-11-01,Services-producing sector,2222.5
+2021-11-01,Wholesale and retail trade,427.9
+2021-11-01,Transportation and warehousing,146.8
+2021-11-01,"Professional, scientific and technical services",269.3
+2021-11-01,"Business, building and other support services",89.4
+2021-11-01,Educational services,186.4
+2021-11-01,Health care and social assistance,366.1
+2021-11-01,"Information, culture and recreation",136.9
+2021-11-01,Accommodation and food services,182.8
+2021-11-01,Other services (except public administration),103.7
+2021-11-01,Public administration,139.1
+2021-12-01,"Total employed, all industries",2714.5
+2021-12-01,Goods-producing sector,497.2
+2021-12-01,Agriculture,20.2
+2021-12-01,"Forestry, fishing, mining, quarrying, oil and gas",43.3
+2021-12-01,Construction,220.9
+2021-12-01,Manufacturing,196.5
+2021-12-01,Services-producing sector,2217.3
+2021-12-01,Wholesale and retail trade,429.7
+2021-12-01,Transportation and warehousing,143.9
+2021-12-01,"Professional, scientific and technical services",266.5
+2021-12-01,"Business, building and other support services",89
+2021-12-01,Educational services,188.1
+2021-12-01,Health care and social assistance,374.2
+2021-12-01,"Information, culture and recreation",142.5
+2021-12-01,Accommodation and food services,175.7
+2021-12-01,Other services (except public administration),103
+2021-12-01,Public administration,141
+2022-01-01,"Total employed, all industries",2726.7
+2022-01-01,Goods-producing sector,503.1
+2022-01-01,Agriculture,22.3
+2022-01-01,"Forestry, fishing, mining, quarrying, oil and gas",46.3
+2022-01-01,Construction,220
+2022-01-01,Manufacturing,198.1
+2022-01-01,Services-producing sector,2223.7
+2022-01-01,Wholesale and retail trade,431.7
+2022-01-01,Transportation and warehousing,147
+2022-01-01,"Professional, scientific and technical services",265.9
+2022-01-01,"Business, building and other support services",85.1
+2022-01-01,Educational services,192.5
+2022-01-01,Health care and social assistance,371
+2022-01-01,"Information, culture and recreation",142.9
+2022-01-01,Accommodation and food services,175.1
+2022-01-01,Other services (except public administration),103.1
+2022-01-01,Public administration,139.9
+2022-02-01,"Total employed, all industries",2750.5
+2022-02-01,Goods-producing sector,508.9
+2022-02-01,Agriculture,24.4
+2022-02-01,"Forestry, fishing, mining, quarrying, oil and gas",45
+2022-02-01,Construction,224.7
+2022-02-01,Manufacturing,197.9
+2022-02-01,Services-producing sector,2241.6
+2022-02-01,Wholesale and retail trade,436.5
+2022-02-01,Transportation and warehousing,147.1
+2022-02-01,"Professional, scientific and technical services",279.9
+2022-02-01,"Business, building and other support services",80.3
+2022-02-01,Educational services,194.9
+2022-02-01,Health care and social assistance,374.8
+2022-02-01,"Information, culture and recreation",145
+2022-02-01,Accommodation and food services,176.9
+2022-02-01,Other services (except public administration),99.9
+2022-02-01,Public administration,139
+2022-03-01,"Total employed, all industries",2749.5
+2022-03-01,Goods-producing sector,505.3
+2022-03-01,Agriculture,24.6
+2022-03-01,"Forestry, fishing, mining, quarrying, oil and gas",45.9
+2022-03-01,Construction,225.8
+2022-03-01,Manufacturing,192.9
+2022-03-01,Services-producing sector,2244.3
+2022-03-01,Wholesale and retail trade,438.5
+2022-03-01,Transportation and warehousing,149.1
+2022-03-01,"Professional, scientific and technical services",284.6
+2022-03-01,"Business, building and other support services",83.4
+2022-03-01,Educational services,188.3
+2022-03-01,Health care and social assistance,372.3
+2022-03-01,"Information, culture and recreation",144.6
+2022-03-01,Accommodation and food services,180.4
+2022-03-01,Other services (except public administration),102.9
+2022-03-01,Public administration,137.1
+2022-04-01,"Total employed, all industries",2761.4
+2022-04-01,Goods-producing sector,510.7
+2022-04-01,Agriculture,22.4
+2022-04-01,"Forestry, fishing, mining, quarrying, oil and gas",46.6
+2022-04-01,Construction,230.6
+2022-04-01,Manufacturing,194.7
+2022-04-01,Services-producing sector,2250.7
+2022-04-01,Wholesale and retail trade,447
+2022-04-01,Transportation and warehousing,147.1
+2022-04-01,"Professional, scientific and technical services",287.5
+2022-04-01,"Business, building and other support services",82.2
+2022-04-01,Educational services,189.9
+2022-04-01,Health care and social assistance,369.1
+2022-04-01,"Information, culture and recreation",143.4
+2022-04-01,Accommodation and food services,180.9
+2022-04-01,Other services (except public administration),101.3
+2022-04-01,Public administration,135.9
+2022-05-01,"Total employed, all industries",2773.7
+2022-05-01,Goods-producing sector,512
+2022-05-01,Agriculture,24.4
+2022-05-01,"Forestry, fishing, mining, quarrying, oil and gas",45.2
+2022-05-01,Construction,240.4
+2022-05-01,Manufacturing,185.6
+2022-05-01,Services-producing sector,2261.7
+2022-05-01,Wholesale and retail trade,445.5
+2022-05-01,Transportation and warehousing,142.5
+2022-05-01,"Professional, scientific and technical services",284.1
+2022-05-01,"Business, building and other support services",87.5
+2022-05-01,Educational services,190.1
+2022-05-01,Health care and social assistance,378.7
+2022-05-01,"Information, culture and recreation",150.1
+2022-05-01,Accommodation and food services,181.6
+2022-05-01,Other services (except public administration),103.3
+2022-05-01,Public administration,134.1
+2022-06-01,"Total employed, all industries",2771.2
+2022-06-01,Goods-producing sector,515.8
+2022-06-01,Agriculture,22.1
+2022-06-01,"Forestry, fishing, mining, quarrying, oil and gas",48.1
+2022-06-01,Construction,240.7
+2022-06-01,Manufacturing,189.6
+2022-06-01,Services-producing sector,2255.5
+2022-06-01,Wholesale and retail trade,437.1
+2022-06-01,Transportation and warehousing,145.6
+2022-06-01,"Professional, scientific and technical services",285.2
+2022-06-01,"Business, building and other support services",87.1
+2022-06-01,Educational services,195.8
+2022-06-01,Health care and social assistance,372.5
+2022-06-01,"Information, culture and recreation",146.6
+2022-06-01,Accommodation and food services,184.9
+2022-06-01,Other services (except public administration),104.9
+2022-06-01,Public administration,136.4
+2022-07-01,"Total employed, all industries",2784.2
+2022-07-01,Goods-producing sector,510.7
+2022-07-01,Agriculture,25
+2022-07-01,"Forestry, fishing, mining, quarrying, oil and gas",48.7
+2022-07-01,Construction,237
+2022-07-01,Manufacturing,184.5
+2022-07-01,Services-producing sector,2273.4
+2022-07-01,Wholesale and retail trade,448.9
+2022-07-01,Transportation and warehousing,146.8
+2022-07-01,"Professional, scientific and technical services",286.4
+2022-07-01,"Business, building and other support services",89
+2022-07-01,Educational services,199.9
+2022-07-01,Health care and social assistance,369.9
+2022-07-01,"Information, culture and recreation",155.9
+2022-07-01,Accommodation and food services,180.2
+2022-07-01,Other services (except public administration),101.3
+2022-07-01,Public administration,136.6
+2022-08-01,"Total employed, all industries",2780.5
+2022-08-01,Goods-producing sector,512.9
+2022-08-01,Agriculture,23.6
+2022-08-01,"Forestry, fishing, mining, quarrying, oil and gas",46.1
+2022-08-01,Construction,246.1
+2022-08-01,Manufacturing,183.4
+2022-08-01,Services-producing sector,2267.6
+2022-08-01,Wholesale and retail trade,433.2
+2022-08-01,Transportation and warehousing,143.7
+2022-08-01,"Professional, scientific and technical services",283.5
+2022-08-01,"Business, building and other support services",90.9
+2022-08-01,Educational services,199.5
+2022-08-01,Health care and social assistance,373.3
+2022-08-01,"Information, culture and recreation",155.1
+2022-08-01,Accommodation and food services,182.7
+2022-08-01,Other services (except public administration),102.7
+2022-08-01,Public administration,141.6
+2022-09-01,"Total employed, all industries",2801.3
+2022-09-01,Goods-producing sector,511.9
+2022-09-01,Agriculture,24.5
+2022-09-01,"Forestry, fishing, mining, quarrying, oil and gas",46.8
+2022-09-01,Construction,245.1
+2022-09-01,Manufacturing,178.9
+2022-09-01,Services-producing sector,2289.4
+2022-09-01,Wholesale and retail trade,434.2
+2022-09-01,Transportation and warehousing,138.3
+2022-09-01,"Professional, scientific and technical services",290.6
+2022-09-01,"Business, building and other support services",92.4
+2022-09-01,Educational services,206.9
+2022-09-01,Health care and social assistance,376.3
+2022-09-01,"Information, culture and recreation",150.4
+2022-09-01,Accommodation and food services,188.9
+2022-09-01,Other services (except public administration),102.4
+2022-09-01,Public administration,141.5
+2022-10-01,"Total employed, all industries",2798.7
+2022-10-01,Goods-producing sector,517.9
+2022-10-01,Agriculture,22.7
+2022-10-01,"Forestry, fishing, mining, quarrying, oil and gas",47.5
+2022-10-01,Construction,245.8
+2022-10-01,Manufacturing,184
+2022-10-01,Services-producing sector,2280.9
+2022-10-01,Wholesale and retail trade,433.8
+2022-10-01,Transportation and warehousing,139.2
+2022-10-01,"Professional, scientific and technical services",291.2
+2022-10-01,"Business, building and other support services",93
+2022-10-01,Educational services,204.5
+2022-10-01,Health care and social assistance,373.5
+2022-10-01,"Information, culture and recreation",152.1
+2022-10-01,Accommodation and food services,187.7
+2022-10-01,Other services (except public administration),102.2
+2022-10-01,Public administration,140.8
+2022-11-01,"Total employed, all industries",2799.1
+2022-11-01,Goods-producing sector,513.7
+2022-11-01,Agriculture,21.4
+2022-11-01,"Forestry, fishing, mining, quarrying, oil and gas",49
+2022-11-01,Construction,245.7
+2022-11-01,Manufacturing,180.8
+2022-11-01,Services-producing sector,2285.3
+2022-11-01,Wholesale and retail trade,427.2
+2022-11-01,Transportation and warehousing,140.8
+2022-11-01,"Professional, scientific and technical services",287.4
+2022-11-01,"Business, building and other support services",95
+2022-11-01,Educational services,209.2
+2022-11-01,Health care and social assistance,371.1
+2022-11-01,"Information, culture and recreation",156.3
+2022-11-01,Accommodation and food services,189.8
+2022-11-01,Other services (except public administration),104
+2022-11-01,Public administration,142.1
+2022-12-01,"Total employed, all industries",2808.4
+2022-12-01,Goods-producing sector,522.6
+2022-12-01,Agriculture,22.8
+2022-12-01,"Forestry, fishing, mining, quarrying, oil and gas",48.9
+2022-12-01,Construction,253.3
+2022-12-01,Manufacturing,180.6
+2022-12-01,Services-producing sector,2285.8
+2022-12-01,Wholesale and retail trade,426.3
+2022-12-01,Transportation and warehousing,145.1
+2022-12-01,"Professional, scientific and technical services",286.5
+2022-12-01,"Business, building and other support services",97.1
+2022-12-01,Educational services,211.7
+2022-12-01,Health care and social assistance,366.5
+2022-12-01,"Information, culture and recreation",145.3
+2022-12-01,Accommodation and food services,191.8
+2022-12-01,Other services (except public administration),105.8
+2022-12-01,Public administration,141.7
+2023-01-01,"Total employed, all industries",2811.9
+2023-01-01,Goods-producing sector,520.8
+2023-01-01,Agriculture,23.3
+2023-01-01,"Forestry, fishing, mining, quarrying, oil and gas",45.6
+2023-01-01,Construction,257
+2023-01-01,Manufacturing,178.4
+2023-01-01,Services-producing sector,2291.1
+2023-01-01,Wholesale and retail trade,439.9
+2023-01-01,Transportation and warehousing,138.4
+2023-01-01,"Professional, scientific and technical services",277.3
+2023-01-01,"Business, building and other support services",93.5
+2023-01-01,Educational services,212
+2023-01-01,Health care and social assistance,366.3
+2023-01-01,"Information, culture and recreation",150.7
+2023-01-01,Accommodation and food services,195.7
+2023-01-01,Other services (except public administration),105.8
+2023-01-01,Public administration,140.6
+2023-02-01,"Total employed, all industries",2819
+2023-02-01,Goods-producing sector,526.6
+2023-02-01,Agriculture,28.2
+2023-02-01,"Forestry, fishing, mining, quarrying, oil and gas",46.7
+2023-02-01,Construction,253.4
+2023-02-01,Manufacturing,180.4
+2023-02-01,Services-producing sector,2292.4
+2023-02-01,Wholesale and retail trade,440.6
+2023-02-01,Transportation and warehousing,136.6
+2023-02-01,"Professional, scientific and technical services",276.5
+2023-02-01,"Business, building and other support services",93.6
+2023-02-01,Educational services,208.5
+2023-02-01,Health care and social assistance,376.5
+2023-02-01,"Information, culture and recreation",145.2
+2023-02-01,Accommodation and food services,198.7
+2023-02-01,Other services (except public administration),107
+2023-02-01,Public administration,138.9
+2023-03-01,"Total employed, all industries",2820.6
+2023-03-01,Goods-producing sector,518.8
+2023-03-01,Agriculture,23.6
+2023-03-01,"Forestry, fishing, mining, quarrying, oil and gas",46.3
+2023-03-01,Construction,251.5
+2023-03-01,Manufacturing,178.3
+2023-03-01,Services-producing sector,2301.8
+2023-03-01,Wholesale and retail trade,442.4
+2023-03-01,Transportation and warehousing,142.5
+2023-03-01,"Professional, scientific and technical services",276.4
+2023-03-01,"Business, building and other support services",94.3
+2023-03-01,Educational services,214.2
+2023-03-01,Health care and social assistance,370.4
+2023-03-01,"Information, culture and recreation",146.5
+2023-03-01,Accommodation and food services,200.5
+2023-03-01,Other services (except public administration),105.7
+2023-03-01,Public administration,138.6
+2023-04-01,"Total employed, all industries",2818.1
+2023-04-01,Goods-producing sector,516.4
+2023-04-01,Agriculture,25.1
+2023-04-01,"Forestry, fishing, mining, quarrying, oil and gas",47.4
+2023-04-01,Construction,248.2
+2023-04-01,Manufacturing,177.3
+2023-04-01,Services-producing sector,2301.7
+2023-04-01,Wholesale and retail trade,445.7
+2023-04-01,Transportation and warehousing,139
+2023-04-01,"Professional, scientific and technical services",273.2
+2023-04-01,"Business, building and other support services",95.2
+2023-04-01,Educational services,219.4
+2023-04-01,Health care and social assistance,366.1
+2023-04-01,"Information, culture and recreation",138.5
+2023-04-01,Accommodation and food services,201.8
+2023-04-01,Other services (except public administration),109.9
+2023-04-01,Public administration,142.9
+2023-05-01,"Total employed, all industries",2831.9
+2023-05-01,Goods-producing sector,512.4
+2023-05-01,Agriculture,27.3
+2023-05-01,"Forestry, fishing, mining, quarrying, oil and gas",49.4
+2023-05-01,Construction,240.1
+2023-05-01,Manufacturing,176.6
+2023-05-01,Services-producing sector,2319.5
+2023-05-01,Wholesale and retail trade,442.1
+2023-05-01,Transportation and warehousing,145.9
+2023-05-01,"Professional, scientific and technical services",281
+2023-05-01,"Business, building and other support services",89.4
+2023-05-01,Educational services,222.1
+2023-05-01,Health care and social assistance,375.5
+2023-05-01,"Information, culture and recreation",135.9
+2023-05-01,Accommodation and food services,200
+2023-05-01,Other services (except public administration),110.7
+2023-05-01,Public administration,143.9
+2023-06-01,"Total employed, all industries",2832
+2023-06-01,Goods-producing sector,506.8
+2023-06-01,Agriculture,26.5
+2023-06-01,"Forestry, fishing, mining, quarrying, oil and gas",48.2
+2023-06-01,Construction,235.7
+2023-06-01,Manufacturing,175.9
+2023-06-01,Services-producing sector,2325.2
+2023-06-01,Wholesale and retail trade,436
+2023-06-01,Transportation and warehousing,144.3
+2023-06-01,"Professional, scientific and technical services",283.9
+2023-06-01,"Business, building and other support services",87.7
+2023-06-01,Educational services,220.6
+2023-06-01,Health care and social assistance,385.2
+2023-06-01,"Information, culture and recreation",140.2
+2023-06-01,Accommodation and food services,199.6
+2023-06-01,Other services (except public administration),108
+2023-06-01,Public administration,140.7
+2023-07-01,"Total employed, all industries",2832.8
+2023-07-01,Goods-producing sector,482.8
+2023-07-01,Agriculture,24.3
+2023-07-01,"Forestry, fishing, mining, quarrying, oil and gas",51.3
+2023-07-01,Construction,214.1
+2023-07-01,Manufacturing,173.8
+2023-07-01,Services-producing sector,2349.9
+2023-07-01,Wholesale and retail trade,443
+2023-07-01,Transportation and warehousing,140.4
+2023-07-01,"Professional, scientific and technical services",294.6
+2023-07-01,"Business, building and other support services",88.7
+2023-07-01,Educational services,216.4
+2023-07-01,Health care and social assistance,392.3
+2023-07-01,"Information, culture and recreation",134
+2023-07-01,Accommodation and food services,202.5
+2023-07-01,Other services (except public administration),111.6
+2023-07-01,Public administration,143.9
+2023-08-01,"Total employed, all industries",2854.7
+2023-08-01,Goods-producing sector,485.7
+2023-08-01,Agriculture,24.6
+2023-08-01,"Forestry, fishing, mining, quarrying, oil and gas",53.6
+2023-08-01,Construction,215.8
+2023-08-01,Manufacturing,172.7
+2023-08-01,Services-producing sector,2369
+2023-08-01,Wholesale and retail trade,444.6
+2023-08-01,Transportation and warehousing,152.3
+2023-08-01,"Professional, scientific and technical services",297.5
+2023-08-01,"Business, building and other support services",94.8
+2023-08-01,Educational services,226.2
+2023-08-01,Health care and social assistance,385.2
+2023-08-01,"Information, culture and recreation",132.9
+2023-08-01,Accommodation and food services,202.1
+2023-08-01,Other services (except public administration),111.9
+2023-08-01,Public administration,145.6
+2023-09-01,"Total employed, all industries",2874
+2023-09-01,Goods-producing sector,493.2
+2023-09-01,Agriculture,22
+2023-09-01,"Forestry, fishing, mining, quarrying, oil and gas",54.7
+2023-09-01,Construction,228.1
+2023-09-01,Manufacturing,170.2
+2023-09-01,Services-producing sector,2380.8
+2023-09-01,Wholesale and retail trade,441.6
+2023-09-01,Transportation and warehousing,155.4
+2023-09-01,"Professional, scientific and technical services",303.2
+2023-09-01,"Business, building and other support services",96.2
+2023-09-01,Educational services,227.7
+2023-09-01,Health care and social assistance,384.3
+2023-09-01,"Information, culture and recreation",137.9
+2023-09-01,Accommodation and food services,192.4
+2023-09-01,Other services (except public administration),117.8
+2023-09-01,Public administration,143.4
+2023-10-01,"Total employed, all industries",2879.9
+2023-10-01,Goods-producing sector,499.1
+2023-10-01,Agriculture,24.1
+2023-10-01,"Forestry, fishing, mining, quarrying, oil and gas",54.3
+2023-10-01,Construction,237.9
+2023-10-01,Manufacturing,165.7
+2023-10-01,Services-producing sector,2380.8
+2023-10-01,Wholesale and retail trade,438.8
+2023-10-01,Transportation and warehousing,156.2
+2023-10-01,"Professional, scientific and technical services",310
+2023-10-01,"Business, building and other support services",91.2
+2023-10-01,Educational services,224.3
+2023-10-01,Health care and social assistance,388.3
+2023-10-01,"Information, culture and recreation",133.1
+2023-10-01,Accommodation and food services,194.2
+2023-10-01,Other services (except public administration),119.8
+2023-10-01,Public administration,144.3
+2023-11-01,"Total employed, all industries",2887
+2023-11-01,Goods-producing sector,512.1
+2023-11-01,Agriculture,23.1
+2023-11-01,"Forestry, fishing, mining, quarrying, oil and gas",52.9
+2023-11-01,Construction,237.2
+2023-11-01,Manufacturing,181.8
+2023-11-01,Services-producing sector,2374.9
+2023-11-01,Wholesale and retail trade,439.2
+2023-11-01,Transportation and warehousing,155.5
+2023-11-01,"Professional, scientific and technical services",295.6
+2023-11-01,"Business, building and other support services",91.3
+2023-11-01,Educational services,222.8
+2023-11-01,Health care and social assistance,397.1
+2023-11-01,"Information, culture and recreation",137
+2023-11-01,Accommodation and food services,187.4
+2023-11-01,Other services (except public administration),120.4
+2023-11-01,Public administration,148.6
+2023-12-01,"Total employed, all industries",2901.8
+2023-12-01,Goods-producing sector,507.1
+2023-12-01,Agriculture,22.3
+2023-12-01,"Forestry, fishing, mining, quarrying, oil and gas",54
+2023-12-01,Construction,235.9
+2023-12-01,Manufacturing,178.8
+2023-12-01,Services-producing sector,2394.7
+2023-12-01,Wholesale and retail trade,442.7
+2023-12-01,Transportation and warehousing,156.5
+2023-12-01,"Professional, scientific and technical services",297.8
+2023-12-01,"Business, building and other support services",81.2
+2023-12-01,Educational services,219.3
+2023-12-01,Health care and social assistance,408.6
+2023-12-01,"Information, culture and recreation",153.4
+2023-12-01,Accommodation and food services,185.6
+2023-12-01,Other services (except public administration),120.2
+2023-12-01,Public administration,148.3
+2024-01-01,"Total employed, all industries",2903.7
+2024-01-01,Goods-producing sector,500.8
+2024-01-01,Agriculture,21.9
+2024-01-01,"Forestry, fishing, mining, quarrying, oil and gas",53.1
+2024-01-01,Construction,233.6
+2024-01-01,Manufacturing,175.1
+2024-01-01,Services-producing sector,2402.9
+2024-01-01,Wholesale and retail trade,435.2
+2024-01-01,Transportation and warehousing,157.5
+2024-01-01,"Professional, scientific and technical services",297
+2024-01-01,"Business, building and other support services",90.1
+2024-01-01,Educational services,221.7
+2024-01-01,Health care and social assistance,407.3
+2024-01-01,"Information, culture and recreation",149.1
+2024-01-01,Accommodation and food services,185.9
+2024-01-01,Other services (except public administration),123.2
+2024-01-01,Public administration,153.4
+2024-02-01,"Total employed, all industries",2909.7
+2024-02-01,Goods-producing sector,504.4
+2024-02-01,Agriculture,18.6
+2024-02-01,"Forestry, fishing, mining, quarrying, oil and gas",53.6
+2024-02-01,Construction,240.6
+2024-02-01,Manufacturing,174.8
+2024-02-01,Services-producing sector,2405.2
+2024-02-01,Wholesale and retail trade,430.2
+2024-02-01,Transportation and warehousing,156.6
+2024-02-01,"Professional, scientific and technical services",301.5
+2024-02-01,"Business, building and other support services",92.2
+2024-02-01,Educational services,223
+2024-02-01,Health care and social assistance,407.7
+2024-02-01,"Information, culture and recreation",152.4
+2024-02-01,Accommodation and food services,183.2
+2024-02-01,Other services (except public administration),122.5
+2024-02-01,Public administration,154.2
+2024-03-01,"Total employed, all industries",2915.3
+2024-03-01,Goods-producing sector,511.7
+2024-03-01,Agriculture,18.4
+2024-03-01,"Forestry, fishing, mining, quarrying, oil and gas",55.2
+2024-03-01,Construction,241.1
+2024-03-01,Manufacturing,178.7
+2024-03-01,Services-producing sector,2403.6
+2024-03-01,Wholesale and retail trade,435.2
+2024-03-01,Transportation and warehousing,151.8
+2024-03-01,"Professional, scientific and technical services",298.3
+2024-03-01,"Business, building and other support services",91.8
+2024-03-01,Educational services,219.5
+2024-03-01,Health care and social assistance,417.6
+2024-03-01,"Information, culture and recreation",145.2
+2024-03-01,Accommodation and food services,178
+2024-03-01,Other services (except public administration),123.4
+2024-03-01,Public administration,155.1
+2024-04-01,"Total employed, all industries",2928.8
+2024-04-01,Goods-producing sector,506.3
+2024-04-01,Agriculture,17.1
+2024-04-01,"Forestry, fishing, mining, quarrying, oil and gas",54.1
+2024-04-01,Construction,243.5
+2024-04-01,Manufacturing,173.9
+2024-04-01,Services-producing sector,2422.5
+2024-04-01,Wholesale and retail trade,424
+2024-04-01,Transportation and warehousing,155.5
+2024-04-01,"Professional, scientific and technical services",303.3
+2024-04-01,"Business, building and other support services",91.7
+2024-04-01,Educational services,223.9
+2024-04-01,Health care and social assistance,415.5
+2024-04-01,"Information, culture and recreation",163.8
+2024-04-01,Accommodation and food services,185.9
+2024-04-01,Other services (except public administration),120.9
+2024-04-01,Public administration,153
+2024-05-01,"Total employed, all industries",2923.2
+2024-05-01,Goods-producing sector,507.7
+2024-05-01,Agriculture,16.9
+2024-05-01,"Forestry, fishing, mining, quarrying, oil and gas",53.1
+2024-05-01,Construction,240.5
+2024-05-01,Manufacturing,179.9
+2024-05-01,Services-producing sector,2415.5
+2024-05-01,Wholesale and retail trade,419.7
+2024-05-01,Transportation and warehousing,155.6
+2024-05-01,"Professional, scientific and technical services",308.9
+2024-05-01,"Business, building and other support services",95
+2024-05-01,Educational services,218.6
+2024-05-01,Health care and social assistance,415.4
+2024-05-01,"Information, culture and recreation",149.4
+2024-05-01,Accommodation and food services,189.3
+2024-05-01,Other services (except public administration),119
+2024-05-01,Public administration,154.2
+2024-06-01,"Total employed, all industries",2916.9
+2024-06-01,Goods-producing sector,516.2
+2024-06-01,Agriculture,18
+2024-06-01,"Forestry, fishing, mining, quarrying, oil and gas",52.7
+2024-06-01,Construction,248.1
+2024-06-01,Manufacturing,181.7
+2024-06-01,Services-producing sector,2400.7
+2024-06-01,Wholesale and retail trade,434.1
+2024-06-01,Transportation and warehousing,156.9
+2024-06-01,"Professional, scientific and technical services",293
+2024-06-01,"Business, building and other support services",97
+2024-06-01,Educational services,217.1
+2024-06-01,Health care and social assistance,405.5
+2024-06-01,"Information, culture and recreation",149.2
+2024-06-01,Accommodation and food services,188.3
+2024-06-01,Other services (except public administration),118
+2024-06-01,Public administration,156.5
+2024-07-01,"Total employed, all industries",2916.6
+2024-07-01,Goods-producing sector,530.3
+2024-07-01,Agriculture,21.4
+2024-07-01,"Forestry, fishing, mining, quarrying, oil and gas",53.4
+2024-07-01,Construction,254.5
+2024-07-01,Manufacturing,183.3
+2024-07-01,Services-producing sector,2386.3
+2024-07-01,Wholesale and retail trade,418.5
+2024-07-01,Transportation and warehousing,157.2
+2024-07-01,"Professional, scientific and technical services",291.1
+2024-07-01,"Business, building and other support services",95.2
+2024-07-01,Educational services,217.3
+2024-07-01,Health care and social assistance,411.5
+2024-07-01,"Information, culture and recreation",147.6
+2024-07-01,Accommodation and food services,188.1
+2024-07-01,Other services (except public administration),116.2
+2024-07-01,Public administration,157.1
+2024-08-01,"Total employed, all industries",2914.4
+2024-08-01,Goods-producing sector,523.3
+2024-08-01,Agriculture,17.2
+2024-08-01,"Forestry, fishing, mining, quarrying, oil and gas",54.7
+2024-08-01,Construction,252.1
+2024-08-01,Manufacturing,182.5
+2024-08-01,Services-producing sector,2391
+2024-08-01,Wholesale and retail trade,424.3
+2024-08-01,Transportation and warehousing,159.8
+2024-08-01,"Professional, scientific and technical services",293.1
+2024-08-01,"Business, building and other support services",91.5
+2024-08-01,Educational services,219.1
+2024-08-01,Health care and social assistance,405.4
+2024-08-01,"Information, culture and recreation",149.3
+2024-08-01,Accommodation and food services,186.6
+2024-08-01,Other services (except public administration),118.9
+2024-08-01,Public administration,154.1
+2024-09-01,"Total employed, all industries",2900.4
+2024-09-01,Goods-producing sector,519.9
+2024-09-01,Agriculture,15.4
+2024-09-01,"Forestry, fishing, mining, quarrying, oil and gas",52.7
+2024-09-01,Construction,249.9
+2024-09-01,Manufacturing,183.2
+2024-09-01,Services-producing sector,2380.5
+2024-09-01,Wholesale and retail trade,431.8
+2024-09-01,Transportation and warehousing,157.7
+2024-09-01,"Professional, scientific and technical services",297.6
+2024-09-01,"Business, building and other support services",92.9
+2024-09-01,Educational services,220.9
+2024-09-01,Health care and social assistance,405.4
+2024-09-01,"Information, culture and recreation",144.5
+2024-09-01,Accommodation and food services,180.1
+2024-09-01,Other services (except public administration),115.3
+2024-09-01,Public administration,156.4
+2024-10-01,"Total employed, all industries",2912.1
+2024-10-01,Goods-producing sector,511.7
+2024-10-01,Agriculture,13.9
+2024-10-01,"Forestry, fishing, mining, quarrying, oil and gas",54.6
+2024-10-01,Construction,246.9
+2024-10-01,Manufacturing,177.3
+2024-10-01,Services-producing sector,2400.4
+2024-10-01,Wholesale and retail trade,429.2
+2024-10-01,Transportation and warehousing,151.8
+2024-10-01,"Professional, scientific and technical services",299.3
+2024-10-01,"Business, building and other support services",101.6
+2024-10-01,Educational services,221.8
+2024-10-01,Health care and social assistance,408
+2024-10-01,"Information, culture and recreation",145.6
+2024-10-01,Accommodation and food services,189.9
+2024-10-01,Other services (except public administration),120.1
+2024-10-01,Public administration,155.8
+2024-11-01,"Total employed, all industries",2916.1
+2024-11-01,Goods-producing sector,515.7
+2024-11-01,Agriculture,13.7
+2024-11-01,"Forestry, fishing, mining, quarrying, oil and gas",52.3
+2024-11-01,Construction,257.4
+2024-11-01,Manufacturing,174
+2024-11-01,Services-producing sector,2400.4
+2024-11-01,Wholesale and retail trade,433.5
+2024-11-01,Transportation and warehousing,154.8
+2024-11-01,"Professional, scientific and technical services",305.9
+2024-11-01,"Business, building and other support services",98.6
+2024-11-01,Educational services,220.7
+2024-11-01,Health care and social assistance,406.9
+2024-11-01,"Information, culture and recreation",139.9
+2024-11-01,Accommodation and food services,196.7
+2024-11-01,Other services (except public administration),112.2
+2024-11-01,Public administration,150.8
+2024-12-01,"Total employed, all industries",2925.6
+2024-12-01,Goods-producing sector,515.5
+2024-12-01,Agriculture,11.8
+2024-12-01,"Forestry, fishing, mining, quarrying, oil and gas",48.2
+2024-12-01,Construction,253.3
+2024-12-01,Manufacturing,181.9
+2024-12-01,Services-producing sector,2410.2
+2024-12-01,Wholesale and retail trade,432.6
+2024-12-01,Transportation and warehousing,158.7
+2024-12-01,"Professional, scientific and technical services",309.6
+2024-12-01,"Business, building and other support services",98
+2024-12-01,Educational services,223.4
+2024-12-01,Health care and social assistance,413.4
+2024-12-01,"Information, culture and recreation",137.7
+2024-12-01,Accommodation and food services,193.9
+2024-12-01,Other services (except public administration),110.6
+2024-12-01,Public administration,149.5
+2025-01-01,"Total employed, all industries",2946.9
+2025-01-01,Goods-producing sector,523.9
+2025-01-01,Agriculture,9.8
+2025-01-01,"Forestry, fishing, mining, quarrying, oil and gas",49.9
+2025-01-01,Construction,258.6
+2025-01-01,Manufacturing,188.6
+2025-01-01,Services-producing sector,2423
+2025-01-01,Wholesale and retail trade,438.1
+2025-01-01,Transportation and warehousing,162.7
+2025-01-01,"Professional, scientific and technical services",318.7
+2025-01-01,"Business, building and other support services",100.3
+2025-01-01,Educational services,224.4
+2025-01-01,Health care and social assistance,403.3
+2025-01-01,"Information, culture and recreation",134.6
+2025-01-01,Accommodation and food services,192.7
+2025-01-01,Other services (except public administration),109.7
+2025-01-01,Public administration,153.7
+2025-02-01,"Total employed, all industries",2940.4
+2025-02-01,Goods-producing sector,518.4
+2025-02-01,Agriculture,12.3
+2025-02-01,"Forestry, fishing, mining, quarrying, oil and gas",49.4
+2025-02-01,Construction,254.3
+2025-02-01,Manufacturing,187.5
+2025-02-01,Services-producing sector,2422
+2025-02-01,Wholesale and retail trade,437.8
+2025-02-01,Transportation and warehousing,162.5
+2025-02-01,"Professional, scientific and technical services",308.9
+2025-02-01,"Business, building and other support services",100.2
+2025-02-01,Educational services,224.8
+2025-02-01,Health care and social assistance,408.2
+2025-02-01,"Information, culture and recreation",134.8
+2025-02-01,Accommodation and food services,193.5
+2025-02-01,Other services (except public administration),110.9
+2025-02-01,Public administration,152.9
+2025-03-01,"Total employed, all industries",2944.9
+2025-03-01,Goods-producing sector,517.4
+2025-03-01,Agriculture,13
+2025-03-01,"Forestry, fishing, mining, quarrying, oil and gas",45.9
+2025-03-01,Construction,256
+2025-03-01,Manufacturing,189
+2025-03-01,Services-producing sector,2427.5
+2025-03-01,Wholesale and retail trade,429.1
+2025-03-01,Transportation and warehousing,167.4
+2025-03-01,"Professional, scientific and technical services",311.2
+2025-03-01,"Business, building and other support services",97.3
+2025-03-01,Educational services,226.2
+2025-03-01,Health care and social assistance,414.8
+2025-03-01,"Information, culture and recreation",140.1
+2025-03-01,Accommodation and food services,194.7
+2025-03-01,Other services (except public administration),102.1
+2025-03-01,Public administration,155.2
+2025-04-01,"Total employed, all industries",2948.6
+2025-04-01,Goods-producing sector,520.8
+2025-04-01,Agriculture,17.2
+2025-04-01,"Forestry, fishing, mining, quarrying, oil and gas",43.9
+2025-04-01,Construction,255.9
+2025-04-01,Manufacturing,189.5
+2025-04-01,Services-producing sector,2427.7
+2025-04-01,Wholesale and retail trade,432.6
+2025-04-01,Transportation and warehousing,167.2
+2025-04-01,"Professional, scientific and technical services",306.2
+2025-04-01,"Business, building and other support services",93.5
+2025-04-01,Educational services,221.8
+2025-04-01,Health care and social assistance,414.5
+2025-04-01,"Information, culture and recreation",143.3
+2025-04-01,Accommodation and food services,186.6
+2025-04-01,Other services (except public administration),111
+2025-04-01,Public administration,161.4
+2025-05-01,"Total employed, all industries",2958.7
+2025-05-01,Goods-producing sector,525.1
+2025-05-01,Agriculture,13.9
+2025-05-01,"Forestry, fishing, mining, quarrying, oil and gas",46
+2025-05-01,Construction,264.9
+2025-05-01,Manufacturing,186.7
+2025-05-01,Services-producing sector,2433.7
+2025-05-01,Wholesale and retail trade,435.6
+2025-05-01,Transportation and warehousing,161.9
+2025-05-01,"Professional, scientific and technical services",317.8
+2025-05-01,"Business, building and other support services",93.4
+2025-05-01,Educational services,228.7
+2025-05-01,Health care and social assistance,423.2
+2025-05-01,"Information, culture and recreation",138
+2025-05-01,Accommodation and food services,178.3
+2025-05-01,Other services (except public administration),108
+2025-05-01,Public administration,160.3
+2025-06-01,"Total employed, all industries",2960.6
+2025-06-01,Goods-producing sector,516.9
+2025-06-01,Agriculture,13.2
+2025-06-01,"Forestry, fishing, mining, quarrying, oil and gas",45.6
+2025-06-01,Construction,262.3
+2025-06-01,Manufacturing,183.2
+2025-06-01,Services-producing sector,2443.7
+2025-06-01,Wholesale and retail trade,437.5
+2025-06-01,Transportation and warehousing,156.3
+2025-06-01,"Professional, scientific and technical services",317.6
+2025-06-01,"Business, building and other support services",94.9
+2025-06-01,Educational services,229
+2025-06-01,Health care and social assistance,421.1
+2025-06-01,"Information, culture and recreation",138.8
+2025-06-01,Accommodation and food services,186.4
+2025-06-01,Other services (except public administration),113.3
+2025-06-01,Public administration,159.2
+2025-07-01,"Total employed, all industries",2952.4
+2025-07-01,Goods-producing sector,511.7
+2025-07-01,Agriculture,14.7
+2025-07-01,"Forestry, fishing, mining, quarrying, oil and gas",43.7
+2025-07-01,Construction,257.6
+2025-07-01,Manufacturing,181.9
+2025-07-01,Services-producing sector,2440.7
+2025-07-01,Wholesale and retail trade,441.8
+2025-07-01,Transportation and warehousing,155.3
+2025-07-01,"Professional, scientific and technical services",316.2
+2025-07-01,"Business, building and other support services",95.8
+2025-07-01,Educational services,226.2
+2025-07-01,Health care and social assistance,417.9
+2025-07-01,"Information, culture and recreation",137.4
+2025-07-01,Accommodation and food services,187.1
+2025-07-01,Other services (except public administration),117.5
+2025-07-01,Public administration,157.4
+2025-08-01,"Total employed, all industries",2935.4
+2025-08-01,Goods-producing sector,529
+2025-08-01,Agriculture,16.2
+2025-08-01,"Forestry, fishing, mining, quarrying, oil and gas",43
+2025-08-01,Construction,268.6
+2025-08-01,Manufacturing,187.3
+2025-08-01,Services-producing sector,2406.4
+2025-08-01,Wholesale and retail trade,447.6
+2025-08-01,Transportation and warehousing,149.6
+2025-08-01,"Professional, scientific and technical services",317.2
+2025-08-01,"Business, building and other support services",96.2
+2025-08-01,Educational services,212.3
+2025-08-01,Health care and social assistance,407.5
+2025-08-01,"Information, culture and recreation",122.5
+2025-08-01,Accommodation and food services,188.5
+2025-08-01,Other services (except public administration),115.5
+2025-08-01,Public administration,156.9
+2025-09-01,"Total employed, all industries",2943.6
+2025-09-01,Goods-producing sector,530.5
+2025-09-01,Agriculture,18.9
+2025-09-01,"Forestry, fishing, mining, quarrying, oil and gas",41.8
+2025-09-01,Construction,267.3
+2025-09-01,Manufacturing,188.8
+2025-09-01,Services-producing sector,2413.1
+2025-09-01,Wholesale and retail trade,432.8
+2025-09-01,Transportation and warehousing,148.4
+2025-09-01,"Professional, scientific and technical services",309.1
+2025-09-01,"Business, building and other support services",92.6
+2025-09-01,Educational services,225.7
+2025-09-01,Health care and social assistance,407
+2025-09-01,"Information, culture and recreation",130.8
+2025-09-01,Accommodation and food services,199.1
+2025-09-01,Other services (except public administration),116.6
+2025-09-01,Public administration,156.3
+2025-10-01,"Total employed, all industries",2940.5
+2025-10-01,Goods-producing sector,524.9
+2025-10-01,Agriculture,20
+2025-10-01,"Forestry, fishing, mining, quarrying, oil and gas",38.5
+2025-10-01,Construction,263.6
+2025-10-01,Manufacturing,188.7
+2025-10-01,Services-producing sector,2415.6
+2025-10-01,Wholesale and retail trade,435.1
+2025-10-01,Transportation and warehousing,154.3
+2025-10-01,"Professional, scientific and technical services",309.3
+2025-10-01,"Business, building and other support services",91.9
+2025-10-01,Educational services,229.3
+2025-10-01,Health care and social assistance,408.4
+2025-10-01,"Information, culture and recreation",131
+2025-10-01,Accommodation and food services,192.7
+2025-10-01,Other services (except public administration),111.7
+2025-10-01,Public administration,158.1
+2025-11-01,"Total employed, all industries",2949.5
+2025-11-01,Goods-producing sector,525.1
+2025-11-01,Agriculture,21.5
+2025-11-01,"Forestry, fishing, mining, quarrying, oil and gas",38.9
+2025-11-01,Construction,264.1
+2025-11-01,Manufacturing,185.2
+2025-11-01,Services-producing sector,2424.4
+2025-11-01,Wholesale and retail trade,433.4
+2025-11-01,Transportation and warehousing,151.2
+2025-11-01,"Professional, scientific and technical services",317.4
+2025-11-01,"Business, building and other support services",92.8
+2025-11-01,Educational services,228.4
+2025-11-01,Health care and social assistance,413.6
+2025-11-01,"Information, culture and recreation",131.3
+2025-11-01,Accommodation and food services,193.5
+2025-11-01,Other services (except public administration),115.3
+2025-11-01,Public administration,159.1
+2025-12-01,"Total employed, all industries",2944.1
+2025-12-01,Goods-producing sector,528.2
+2025-12-01,Agriculture,22.5
+2025-12-01,"Forestry, fishing, mining, quarrying, oil and gas",41.9
+2025-12-01,Construction,271.2
+2025-12-01,Manufacturing,177.3
+2025-12-01,Services-producing sector,2415.9
+2025-12-01,Wholesale and retail trade,428.7
+2025-12-01,Transportation and warehousing,147.5
+2025-12-01,"Professional, scientific and technical services",312.5
+2025-12-01,"Business, building and other support services",93.3
+2025-12-01,Educational services,230.1
+2025-12-01,Health care and social assistance,419.6
+2025-12-01,"Information, culture and recreation",122.6
+2025-12-01,Accommodation and food services,197.5
+2025-12-01,Other services (except public administration),116.2
+2025-12-01,Public administration,159.5
+2026-01-01,"Total employed, all industries",2947.6
+2026-01-01,Goods-producing sector,529.2
+2026-01-01,Agriculture,21.8
+2026-01-01,"Forestry, fishing, mining, quarrying, oil and gas",41.1
+2026-01-01,Construction,271.6
+2026-01-01,Manufacturing,178.9
+2026-01-01,Services-producing sector,2418.4
+2026-01-01,Wholesale and retail trade,423.2
+2026-01-01,Transportation and warehousing,151.6
+2026-01-01,"Professional, scientific and technical services",311.1
+2026-01-01,"Business, building and other support services",98.5
+2026-01-01,Educational services,222
+2026-01-01,Health care and social assistance,425.8
+2026-01-01,"Information, culture and recreation",131.9
+2026-01-01,Accommodation and food services,192
+2026-01-01,Other services (except public administration),115.9
+2026-01-01,Public administration,156.4
+2026-02-01,"Total employed, all industries",2927.4
+2026-02-01,Goods-producing sector,520
+2026-02-01,Agriculture,23.8
+2026-02-01,"Forestry, fishing, mining, quarrying, oil and gas",40.1
+2026-02-01,Construction,264.7
+2026-02-01,Manufacturing,175.3
+2026-02-01,Services-producing sector,2407.4
+2026-02-01,Wholesale and retail trade,425.6
+2026-02-01,Transportation and warehousing,149.2
+2026-02-01,"Professional, scientific and technical services",316.4
+2026-02-01,"Business, building and other support services",94.7
+2026-02-01,Educational services,220.4
+2026-02-01,Health care and social assistance,420.9
+2026-02-01,"Information, culture and recreation",127.4
+2026-02-01,Accommodation and food services,199.2
+2026-02-01,Other services (except public administration),112.5
+2026-02-01,Public administration,156.3
+2026-03-01,"Total employed, all industries",2908.2
+2026-03-01,Goods-producing sector,527.1
+2026-03-01,Agriculture,21.9
+2026-03-01,"Forestry, fishing, mining, quarrying, oil and gas",41
+2026-03-01,Construction,267.5
+2026-03-01,Manufacturing,179
+2026-03-01,Services-producing sector,2381.2
+2026-03-01,Wholesale and retail trade,415.9
+2026-03-01,Transportation and warehousing,145.9
+2026-03-01,"Professional, scientific and technical services",310.6
+2026-03-01,"Business, building and other support services",90.7
+2026-03-01,Educational services,222.8
+2026-03-01,Health care and social assistance,418.5
+2026-03-01,"Information, culture and recreation",129.8
+2026-03-01,Accommodation and food services,196.4
+2026-03-01,Other services (except public administration),116.4
+2026-03-01,Public administration,156.5

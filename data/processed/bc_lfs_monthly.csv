@@ -1,0 +1,523 @@
+date,indicator,value
+2019-01-01,Population,4200.9
+2019-01-01,Labour force,2800.2
+2019-01-01,Employment,2669.3
+2019-01-01,Unemployment rate,4.7
+2019-01-01,Participation rate,66.7
+2019-01-01,Employment rate,63.5
+2019-02-01,Population,4204.9
+2019-02-01,Labour force,2805.2
+2019-02-01,Employment,2677.3
+2019-02-01,Unemployment rate,4.6
+2019-02-01,Participation rate,66.7
+2019-02-01,Employment rate,63.7
+2019-03-01,Population,4210.4
+2019-03-01,Labour force,2807.4
+2019-03-01,Employment,2671.5
+2019-03-01,Unemployment rate,4.8
+2019-03-01,Participation rate,66.7
+2019-03-01,Employment rate,63.5
+2019-04-01,Population,4218.3
+2019-04-01,Labour force,2812.2
+2019-04-01,Employment,2678.7
+2019-04-01,Unemployment rate,4.7
+2019-04-01,Participation rate,66.7
+2019-04-01,Employment rate,63.5
+2019-05-01,Population,4224.9
+2019-05-01,Labour force,2827.2
+2019-05-01,Employment,2698.5
+2019-05-01,Unemployment rate,4.6
+2019-05-01,Participation rate,66.9
+2019-05-01,Employment rate,63.9
+2019-06-01,Population,4231.4
+2019-06-01,Labour force,2830.8
+2019-06-01,Employment,2695.3
+2019-06-01,Unemployment rate,4.8
+2019-06-01,Participation rate,66.9
+2019-06-01,Employment rate,63.7
+2019-07-01,Population,4240.8
+2019-07-01,Labour force,2818.6
+2019-07-01,Employment,2685.4
+2019-07-01,Unemployment rate,4.7
+2019-07-01,Participation rate,66.5
+2019-07-01,Employment rate,63.3
+2019-08-01,Population,4248.7
+2019-08-01,Labour force,2825.1
+2019-08-01,Employment,2684.2
+2019-08-01,Unemployment rate,5
+2019-08-01,Participation rate,66.5
+2019-08-01,Employment rate,63.2
+2019-09-01,Population,4257.5
+2019-09-01,Labour force,2810.4
+2019-09-01,Employment,2669.8
+2019-09-01,Unemployment rate,5
+2019-09-01,Participation rate,66
+2019-09-01,Employment rate,62.7
+2019-10-01,Population,4264.7
+2019-10-01,Labour force,2827.6
+2019-10-01,Employment,2689.7
+2019-10-01,Unemployment rate,4.9
+2019-10-01,Participation rate,66.3
+2019-10-01,Employment rate,63.1
+2019-11-01,Population,4271.5
+2019-11-01,Labour force,2823.1
+2019-11-01,Employment,2676
+2019-11-01,Unemployment rate,5.2
+2019-11-01,Participation rate,66.1
+2019-11-01,Employment rate,62.6
+2019-12-01,Population,4277.3
+2019-12-01,Labour force,2820.2
+2019-12-01,Employment,2680.7
+2019-12-01,Unemployment rate,4.9
+2019-12-01,Participation rate,65.9
+2019-12-01,Employment rate,62.7
+2020-01-01,Population,4283.4
+2020-01-01,Labour force,2813.4
+2020-01-01,Employment,2681.3
+2020-01-01,Unemployment rate,4.7
+2020-01-01,Participation rate,65.7
+2020-01-01,Employment rate,62.6
+2020-02-01,Population,4290.2
+2020-02-01,Labour force,2832.1
+2020-02-01,Employment,2678.8
+2020-02-01,Unemployment rate,5.4
+2020-02-01,Participation rate,66
+2020-02-01,Employment rate,62.4
+2020-03-01,Population,4298.3
+2020-03-01,Labour force,2718.6
+2020-03-01,Employment,2503.2
+2020-03-01,Unemployment rate,7.9
+2020-03-01,Participation rate,63.2
+2020-03-01,Employment rate,58.2
+2020-04-01,Population,4304.1
+2020-04-01,Labour force,2551.5
+2020-04-01,Employment,2247.3
+2020-04-01,Unemployment rate,11.9
+2020-04-01,Participation rate,59.3
+2020-04-01,Employment rate,52.2
+2020-05-01,Population,4309.5
+2020-05-01,Labour force,2675.3
+2020-05-01,Employment,2301.2
+2020-05-01,Unemployment rate,14
+2020-05-01,Participation rate,62.1
+2020-05-01,Employment rate,53.4
+2020-06-01,Population,4316.7
+2020-06-01,Labour force,2785.7
+2020-06-01,Employment,2429.6
+2020-06-01,Unemployment rate,12.8
+2020-06-01,Participation rate,64.5
+2020-06-01,Employment rate,56.3
+2020-07-01,Population,4321.7
+2020-07-01,Labour force,2804.4
+2020-07-01,Employment,2500.5
+2020-07-01,Unemployment rate,10.8
+2020-07-01,Participation rate,64.9
+2020-07-01,Employment rate,57.9
+2020-08-01,Population,4324.5
+2020-08-01,Labour force,2815.3
+2020-08-01,Employment,2519
+2020-08-01,Unemployment rate,10.5
+2020-08-01,Participation rate,65.1
+2020-08-01,Employment rate,58.2
+2020-09-01,Population,4327.7
+2020-09-01,Labour force,2832.8
+2020-09-01,Employment,2586.3
+2020-09-01,Unemployment rate,8.7
+2020-09-01,Participation rate,65.5
+2020-09-01,Employment rate,59.8
+2020-10-01,Population,4329.2
+2020-10-01,Labour force,2853.6
+2020-10-01,Employment,2619.4
+2020-10-01,Unemployment rate,8.2
+2020-10-01,Participation rate,65.9
+2020-10-01,Employment rate,60.5
+2020-11-01,Population,4330.1
+2020-11-01,Labour force,2858.4
+2020-11-01,Employment,2635.2
+2020-11-01,Unemployment rate,7.8
+2020-11-01,Participation rate,66
+2020-11-01,Employment rate,60.9
+2020-12-01,Population,4330.7
+2020-12-01,Labour force,2852.2
+2020-12-01,Employment,2635.1
+2020-12-01,Unemployment rate,7.6
+2020-12-01,Participation rate,65.9
+2020-12-01,Employment rate,60.8
+2021-01-01,Population,4331.5
+2021-01-01,Labour force,2865.7
+2021-01-01,Employment,2647
+2021-01-01,Unemployment rate,7.6
+2021-01-01,Participation rate,66.2
+2021-01-01,Employment rate,61.1
+2021-02-01,Population,4334.5
+2021-02-01,Labour force,2870.8
+2021-02-01,Employment,2661.4
+2021-02-01,Unemployment rate,7.3
+2021-02-01,Participation rate,66.2
+2021-02-01,Employment rate,61.4
+2021-03-01,Population,4337.9
+2021-03-01,Labour force,2888.9
+2021-03-01,Employment,2681.8
+2021-03-01,Unemployment rate,7.2
+2021-03-01,Participation rate,66.6
+2021-03-01,Employment rate,61.8
+2021-04-01,Population,4341.5
+2021-04-01,Labour force,2846.3
+2021-04-01,Employment,2645.8
+2021-04-01,Unemployment rate,7
+2021-04-01,Participation rate,65.6
+2021-04-01,Employment rate,60.9
+2021-05-01,Population,4345.1
+2021-05-01,Labour force,2855.1
+2021-05-01,Employment,2651
+2021-05-01,Unemployment rate,7.1
+2021-05-01,Participation rate,65.7
+2021-05-01,Employment rate,61
+2021-06-01,Population,4350.4
+2021-06-01,Labour force,2874.6
+2021-06-01,Employment,2684.9
+2021-06-01,Unemployment rate,6.6
+2021-06-01,Participation rate,66.1
+2021-06-01,Employment rate,61.7
+2021-07-01,Population,4356.5
+2021-07-01,Labour force,2879.6
+2021-07-01,Employment,2694.7
+2021-07-01,Unemployment rate,6.4
+2021-07-01,Participation rate,66.1
+2021-07-01,Employment rate,61.9
+2021-08-01,Population,4365.2
+2021-08-01,Labour force,2886.9
+2021-08-01,Employment,2699.7
+2021-08-01,Unemployment rate,6.5
+2021-08-01,Participation rate,66.1
+2021-08-01,Employment rate,61.8
+2021-09-01,Population,4372.3
+2021-09-01,Labour force,2884.2
+2021-09-01,Employment,2706.6
+2021-09-01,Unemployment rate,6.2
+2021-09-01,Participation rate,66
+2021-09-01,Employment rate,61.9
+2021-10-01,Population,4379.7
+2021-10-01,Labour force,2865.5
+2021-10-01,Employment,2704.3
+2021-10-01,Unemployment rate,5.6
+2021-10-01,Participation rate,65.4
+2021-10-01,Employment rate,61.7
+2021-11-01,Population,4387.9
+2021-11-01,Labour force,2883.4
+2021-11-01,Employment,2724.5
+2021-11-01,Unemployment rate,5.5
+2021-11-01,Participation rate,65.7
+2021-11-01,Employment rate,62.1
+2021-12-01,Population,4395
+2021-12-01,Labour force,2866
+2021-12-01,Employment,2714.5
+2021-12-01,Unemployment rate,5.3
+2021-12-01,Participation rate,65.2
+2021-12-01,Employment rate,61.8
+2022-01-01,Population,4401.9
+2022-01-01,Labour force,2872.3
+2022-01-01,Employment,2726.7
+2022-01-01,Unemployment rate,5.1
+2022-01-01,Participation rate,65.3
+2022-01-01,Employment rate,61.9
+2022-02-01,Population,4410.2
+2022-02-01,Labour force,2889.2
+2022-02-01,Employment,2750.5
+2022-02-01,Unemployment rate,4.8
+2022-02-01,Participation rate,65.5
+2022-02-01,Employment rate,62.4
+2022-03-01,Population,4418.4
+2022-03-01,Labour force,2897
+2022-03-01,Employment,2749.5
+2022-03-01,Unemployment rate,5.1
+2022-03-01,Participation rate,65.6
+2022-03-01,Employment rate,62.2
+2022-04-01,Population,4426.6
+2022-04-01,Labour force,2903.4
+2022-04-01,Employment,2761.4
+2022-04-01,Unemployment rate,4.9
+2022-04-01,Participation rate,65.6
+2022-04-01,Employment rate,62.4
+2022-05-01,Population,4435.6
+2022-05-01,Labour force,2904.8
+2022-05-01,Employment,2773.7
+2022-05-01,Unemployment rate,4.5
+2022-05-01,Participation rate,65.5
+2022-05-01,Employment rate,62.5
+2022-06-01,Population,4442.3
+2022-06-01,Labour force,2905.4
+2022-06-01,Employment,2771.2
+2022-06-01,Unemployment rate,4.6
+2022-06-01,Participation rate,65.4
+2022-06-01,Employment rate,62.4
+2022-07-01,Population,4447.8
+2022-07-01,Labour force,2917.4
+2022-07-01,Employment,2784.2
+2022-07-01,Unemployment rate,4.6
+2022-07-01,Participation rate,65.6
+2022-07-01,Employment rate,62.6
+2022-08-01,Population,4454
+2022-08-01,Labour force,2915.6
+2022-08-01,Employment,2780.5
+2022-08-01,Unemployment rate,4.6
+2022-08-01,Participation rate,65.5
+2022-08-01,Employment rate,62.4
+2022-09-01,Population,4460.7
+2022-09-01,Labour force,2929.3
+2022-09-01,Employment,2801.3
+2022-09-01,Unemployment rate,4.4
+2022-09-01,Participation rate,65.7
+2022-09-01,Employment rate,62.8
+2022-10-01,Population,4467.9
+2022-10-01,Labour force,2933.7
+2022-10-01,Employment,2798.7
+2022-10-01,Unemployment rate,4.6
+2022-10-01,Participation rate,65.7
+2022-10-01,Employment rate,62.6
+2022-11-01,Population,4474.2
+2022-11-01,Labour force,2927.2
+2022-11-01,Employment,2799.1
+2022-11-01,Unemployment rate,4.4
+2022-11-01,Participation rate,65.4
+2022-11-01,Employment rate,62.6
+2022-12-01,Population,4480.7
+2022-12-01,Labour force,2930.9
+2022-12-01,Employment,2808.4
+2022-12-01,Unemployment rate,4.2
+2022-12-01,Participation rate,65.4
+2022-12-01,Employment rate,62.7
+2023-01-01,Population,4491.1
+2023-01-01,Labour force,2945.3
+2023-01-01,Employment,2811.9
+2023-01-01,Unemployment rate,4.5
+2023-01-01,Participation rate,65.6
+2023-01-01,Employment rate,62.6
+2023-02-01,Population,4505.2
+2023-02-01,Labour force,2976.2
+2023-02-01,Employment,2819
+2023-02-01,Unemployment rate,5.3
+2023-02-01,Participation rate,66.1
+2023-02-01,Employment rate,62.6
+2023-03-01,Population,4519.6
+2023-03-01,Labour force,2957.6
+2023-03-01,Employment,2820.6
+2023-03-01,Unemployment rate,4.6
+2023-03-01,Participation rate,65.4
+2023-03-01,Employment rate,62.4
+2023-04-01,Population,4531.9
+2023-04-01,Labour force,2969.6
+2023-04-01,Employment,2818.1
+2023-04-01,Unemployment rate,5.1
+2023-04-01,Participation rate,65.5
+2023-04-01,Employment rate,62.2
+2023-05-01,Population,4546.2
+2023-05-01,Labour force,2981.8
+2023-05-01,Employment,2831.9
+2023-05-01,Unemployment rate,5
+2023-05-01,Participation rate,65.6
+2023-05-01,Employment rate,62.3
+2023-06-01,Population,4559.9
+2023-06-01,Labour force,2997.6
+2023-06-01,Employment,2832
+2023-06-01,Unemployment rate,5.5
+2023-06-01,Participation rate,65.7
+2023-06-01,Employment rate,62.1
+2023-07-01,Population,4573.4
+2023-07-01,Labour force,2997.1
+2023-07-01,Employment,2832.8
+2023-07-01,Unemployment rate,5.5
+2023-07-01,Participation rate,65.5
+2023-07-01,Employment rate,61.9
+2023-08-01,Population,4587.7
+2023-08-01,Labour force,3010.3
+2023-08-01,Employment,2854.7
+2023-08-01,Unemployment rate,5.2
+2023-08-01,Participation rate,65.6
+2023-08-01,Employment rate,62.2
+2023-09-01,Population,4600.5
+2023-09-01,Labour force,3038.4
+2023-09-01,Employment,2874
+2023-09-01,Unemployment rate,5.4
+2023-09-01,Participation rate,66
+2023-09-01,Employment rate,62.5
+2023-10-01,Population,4612.4
+2023-10-01,Labour force,3040.4
+2023-10-01,Employment,2879.9
+2023-10-01,Unemployment rate,5.3
+2023-10-01,Participation rate,65.9
+2023-10-01,Employment rate,62.4
+2023-11-01,Population,4624.9
+2023-11-01,Labour force,3051.3
+2023-11-01,Employment,2887
+2023-11-01,Unemployment rate,5.4
+2023-11-01,Participation rate,66
+2023-11-01,Employment rate,62.4
+2023-12-01,Population,4637.8
+2023-12-01,Labour force,3073.1
+2023-12-01,Employment,2901.8
+2023-12-01,Unemployment rate,5.6
+2023-12-01,Participation rate,66.3
+2023-12-01,Employment rate,62.6
+2024-01-01,Population,4653.8
+2024-01-01,Labour force,3065.7
+2024-01-01,Employment,2903.7
+2024-01-01,Unemployment rate,5.3
+2024-01-01,Participation rate,65.9
+2024-01-01,Employment rate,62.4
+2024-02-01,Population,4668.4
+2024-02-01,Labour force,3068.9
+2024-02-01,Employment,2909.7
+2024-02-01,Unemployment rate,5.2
+2024-02-01,Participation rate,65.7
+2024-02-01,Employment rate,62.3
+2024-03-01,Population,4682.5
+2024-03-01,Labour force,3086.9
+2024-03-01,Employment,2915.3
+2024-03-01,Unemployment rate,5.6
+2024-03-01,Participation rate,65.9
+2024-03-01,Employment rate,62.3
+2024-04-01,Population,4698
+2024-04-01,Labour force,3085.8
+2024-04-01,Employment,2928.9
+2024-04-01,Unemployment rate,5.1
+2024-04-01,Participation rate,65.7
+2024-04-01,Employment rate,62.3
+2024-05-01,Population,4713.4
+2024-05-01,Labour force,3094.2
+2024-05-01,Employment,2923.2
+2024-05-01,Unemployment rate,5.5
+2024-05-01,Participation rate,65.6
+2024-05-01,Employment rate,62
+2024-06-01,Population,4728.5
+2024-06-01,Labour force,3083.2
+2024-06-01,Employment,2916.9
+2024-06-01,Unemployment rate,5.4
+2024-06-01,Participation rate,65.2
+2024-06-01,Employment rate,61.7
+2024-07-01,Population,4743.9
+2024-07-01,Labour force,3092.4
+2024-07-01,Employment,2916.6
+2024-07-01,Unemployment rate,5.7
+2024-07-01,Participation rate,65.2
+2024-07-01,Employment rate,61.5
+2024-08-01,Population,4757.5
+2024-08-01,Labour force,3091.6
+2024-08-01,Employment,2914.4
+2024-08-01,Unemployment rate,5.7
+2024-08-01,Participation rate,65
+2024-08-01,Employment rate,61.3
+2024-09-01,Population,4771.5
+2024-09-01,Labour force,3082.5
+2024-09-01,Employment,2900.4
+2024-09-01,Unemployment rate,5.9
+2024-09-01,Participation rate,64.6
+2024-09-01,Employment rate,60.8
+2024-10-01,Population,4781.5
+2024-10-01,Labour force,3089.6
+2024-10-01,Employment,2912.1
+2024-10-01,Unemployment rate,5.7
+2024-10-01,Participation rate,64.6
+2024-10-01,Employment rate,60.9
+2024-11-01,Population,4789.7
+2024-11-01,Labour force,3098.3
+2024-11-01,Employment,2916.1
+2024-11-01,Unemployment rate,5.9
+2024-11-01,Participation rate,64.7
+2024-11-01,Employment rate,60.9
+2024-12-01,Population,4798.3
+2024-12-01,Labour force,3111.4
+2024-12-01,Employment,2925.6
+2024-12-01,Unemployment rate,6
+2024-12-01,Participation rate,64.8
+2024-12-01,Employment rate,61
+2025-01-01,Population,4805.9
+2025-01-01,Labour force,3133.9
+2025-01-01,Employment,2946.9
+2025-01-01,Unemployment rate,6
+2025-01-01,Participation rate,65.2
+2025-01-01,Employment rate,61.3
+2025-02-01,Population,4812.8
+2025-02-01,Labour force,3127.3
+2025-02-01,Employment,2940.4
+2025-02-01,Unemployment rate,6
+2025-02-01,Participation rate,65
+2025-02-01,Employment rate,61.1
+2025-03-01,Population,4820.4
+2025-03-01,Labour force,3135.1
+2025-03-01,Employment,2944.9
+2025-03-01,Unemployment rate,6.1
+2025-03-01,Participation rate,65
+2025-03-01,Employment rate,61.1
+2025-04-01,Population,4827.5
+2025-04-01,Labour force,3143.3
+2025-04-01,Employment,2948.6
+2025-04-01,Unemployment rate,6.2
+2025-04-01,Participation rate,65.1
+2025-04-01,Employment rate,61.1
+2025-05-01,Population,4831.9
+2025-05-01,Labour force,3163.4
+2025-05-01,Employment,2958.7
+2025-05-01,Unemployment rate,6.5
+2025-05-01,Participation rate,65.5
+2025-05-01,Employment rate,61.2
+2025-06-01,Population,4837.2
+2025-06-01,Labour force,3140.7
+2025-06-01,Employment,2960.6
+2025-06-01,Unemployment rate,5.7
+2025-06-01,Participation rate,64.9
+2025-06-01,Employment rate,61.2
+2025-07-01,Population,4842.4
+2025-07-01,Labour force,3139.5
+2025-07-01,Employment,2952.4
+2025-07-01,Unemployment rate,6
+2025-07-01,Participation rate,64.8
+2025-07-01,Employment rate,61
+2025-08-01,Population,4846.2
+2025-08-01,Labour force,3133.5
+2025-08-01,Employment,2935.4
+2025-08-01,Unemployment rate,6.3
+2025-08-01,Participation rate,64.7
+2025-08-01,Employment rate,60.6
+2025-09-01,Population,4848.1
+2025-09-01,Labour force,3144.4
+2025-09-01,Employment,2943.5
+2025-09-01,Unemployment rate,6.4
+2025-09-01,Participation rate,64.9
+2025-09-01,Employment rate,60.7
+2025-10-01,Population,4848.7
+2025-10-01,Labour force,3149.5
+2025-10-01,Employment,2940.5
+2025-10-01,Unemployment rate,6.6
+2025-10-01,Participation rate,65
+2025-10-01,Employment rate,60.6
+2025-11-01,Population,4848.3
+2025-11-01,Labour force,3152.5
+2025-11-01,Employment,2949.5
+2025-11-01,Unemployment rate,6.4
+2025-11-01,Participation rate,65
+2025-11-01,Employment rate,60.8
+2025-12-01,Population,4847
+2025-12-01,Labour force,3143.7
+2025-12-01,Employment,2944.1
+2025-12-01,Unemployment rate,6.3
+2025-12-01,Participation rate,64.9
+2025-12-01,Employment rate,60.7
+2026-01-01,Population,4844
+2026-01-01,Labour force,3138.1
+2026-01-01,Employment,2947.6
+2026-01-01,Unemployment rate,6.1
+2026-01-01,Participation rate,64.8
+2026-01-01,Employment rate,60.9
+2026-02-01,Population,4841.7
+2026-02-01,Labour force,3118.1
+2026-02-01,Employment,2927.4
+2026-02-01,Unemployment rate,6.1
+2026-02-01,Participation rate,64.4
+2026-02-01,Employment rate,60.5
+2026-03-01,Population,4840.3
+2026-03-01,Labour force,3118.1
+2026-03-01,Employment,2908.2
+2026-03-01,Unemployment rate,6.7
+2026-03-01,Participation rate,64.4
+2026-03-01,Employment rate,60.1

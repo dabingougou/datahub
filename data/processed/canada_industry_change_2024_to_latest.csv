@@ -1,0 +1,16 @@
+industry,emp_2024_01,emp_latest,pct_change
+"Total employed, all industries",20552.1,21051.4,0.0242943543482176
+Agriculture,231.5,232.3,0.0034557235421166796
+"Forestry, fishing, mining, quarrying, oil and gas",345.8,350.3,0.013013302486986697
+Construction,1585.8,1632.1,0.029196620002522357
+Manufacturing,1841.6,1817.4,-0.013140747176368277
+Wholesale and retail trade,2983.1,2970.6,-0.004190271864838591
+Transportation and warehousing,1085.6,1099.9,0.01317243920412692
+"Professional, scientific and technical services",1947.7,1998.8,0.026236073317245936
+"Business, building and other support services",694,671.7,-0.03213256484149849
+Educational services,1569,1570.5,9.560229445506692e-4
+Health care and social assistance,2743.5,2971.1,0.08295972298159282
+"Information, culture and recreation",839.9,879.1,0.04667222288367669
+Accommodation and food services,1104.8,1159.3,0.04933019551049964
+Other services (except public administration),799.9,792.2,-0.009626203275409341
+Public administration,1218.9,1256.7,0.031011567807039096
