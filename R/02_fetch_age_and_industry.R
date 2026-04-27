@@ -1,8 +1,9 @@
 # =============================================================================
-# 04_fetch_age_and_industry.R
+# 02_fetch_age_and_industry.R
 #
-# Pull additional data:
-#   - BC Stats age cohorts 1971-2046 (Table 3 of projections xlsx)
+# Pull:
+#   - BC Stats age cohorts (Table 3 of the BC Stats projections xlsx — must be
+#     placed in data/raw/temp/ manually; not auto-downloaded)
 #   - CANSIM 14-10-0355-01 — Employment by industry, monthly (BC, SA)
 # =============================================================================
 
@@ -119,7 +120,6 @@ ind_change <- bc_ind %>%
   ) %>%
   arrange(pct_change)
 
-write_csv(bc_ind,        file.path(proc_dir, "bc_industry_employment.csv"))
 write_csv(ind_change,    file.path(proc_dir, "bc_industry_change_2024_to_latest.csv"))
 
 message("Done. Files in: ", proc_dir)

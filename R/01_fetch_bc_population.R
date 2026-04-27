@@ -1,7 +1,7 @@
 # =============================================================================
 # 01_fetch_bc_population.R
 #
-# Pull BC population, components-of-change, and labour force data from
+# Pull BC quarterly population and the components of demographic growth from
 # Statistics Canada (NDM tables) via the `cansim` package.
 #
 # Output: data/raw/*.rds (cached pulls), data/processed/*.csv (analysis tables)
@@ -45,47 +45,25 @@ bc_pop <- pop_quarterly %>%
   arrange(date)
 
 # -----------------------------------------------------------------------------
-# Table 17-10-0008-01 — Estimates of the components of demographic growth (annual)
+# Table 17-10-0008-01 — Components of demographic growth (annual)
 #   REF_DATE format: "YYYY/YYYY" representing the demographic year (Jul–Jun)
 # -----------------------------------------------------------------------------
 components_annual <- cache_or_fetch("17-10-0008-01", raw_dir)
 
 bc_components <- components_annual %>%
   filter(GEO == "British Columbia") %>%
-  # demographic year e.g. "2019/2020" — take the second year (year ending Jun 30)
   mutate(year_end = as.integer(substr(REF_DATE, nchar(REF_DATE) - 3,
                                        nchar(REF_DATE)))) %>%
   select(REF_DATE, year_end, component = `Components of population growth`,
          val = VALUE) %>%
   filter(year_end >= 2020, year_end <= 2025)
 
-# Component categorization -----------------------------------------------------
-# Map raw component names into a tidy 5-bucket scheme for stacked plotting.
-component_map <- tibble::tribble(
-  ~raw,                                                            ~bucket,
-  "Births",                                                        "Natural (births)",
-  "Deaths",                                                        "Natural (deaths)",
-  "Immigrants",                                                    "Immigration (PR)",
-  "Emigrants",                                                     "Emigration (PR)",
-  "Net non-permanent residents",                                   "Net NPR",
-  "Returning emigrants",                                           "Other PR flows",
-  "Net temporary emigration",                                      "Other PR flows",
-  "Interprovincial in-migrants",                                   "Interprovincial in",
-  "Interprovincial out-migrants",                                  "Interprovincial out",
-  "Net interprovincial migration",                                 "Net interprovincial",
-  "Net international migration",                                   "Net international (combined)",
-  "Net emigration",                                                "Other PR flows",
-  "Net non-permanent residents (a)",                               "Net NPR"
-)
-
-bc_components_tidy <- bc_components %>%
-  left_join(component_map, by = c("component" = "raw"))
-
-# Net components for stacked plotting (positive contributions to growth) ------
-# Net international PR = Immigrants + Returning emigrants - Emigrants - Net temp. emig.
-# Natural increase = Births - Deaths
-# Net NPR = "Net non-permanent residents"
-# Net interprov = "Net interprovincial migration"
+# Aggregate components into the four buckets used in the public article:
+#   Natural increase   = Births - Deaths
+#   Net interprov      = Net interprovincial migration
+#   Net international (PR) = Immigrants + Returning emigrants
+#                          - Emigrants - Net temporary emigration
+#   Net NPR            = Net non-permanent residents
 bc_components_net <- bc_components %>%
   filter(component %in% c(
     "Births", "Deaths",
@@ -118,28 +96,8 @@ bc_components_net <- bc_components %>%
   group_by(year_end, bucket) %>%
   summarise(contribution = sum(contribution, na.rm = TRUE), .groups = "drop")
 
-# -----------------------------------------------------------------------------
-# Table 14-10-0287-01 — LFS, monthly, by province (base table; filter manually)
-# -----------------------------------------------------------------------------
-lfs <- cache_or_fetch("14-10-0287-01", raw_dir)
-
-bc_lfs <- lfs %>%
-  filter(GEO == "British Columbia",
-         `Labour force characteristics` %in%
-           c("Population", "Labour force", "Employment",
-             "Unemployment rate", "Participation rate", "Employment rate"),
-         Statistics == "Estimate",
-         `Data type` == "Seasonally adjusted",
-         Gender == "Total - Gender",
-         `Age group` == "15 years and over") %>%
-  mutate(date = ymd(paste0(REF_DATE, "-01"))) %>%
-  select(date, indicator = `Labour force characteristics`, value = VALUE) %>%
-  filter(date >= ymd("2019-01-01"))
-
 # Save processed -------------------------------------------------------------
-write_csv(bc_pop,             file.path(proc_dir, "bc_population_quarterly.csv"))
-write_csv(bc_components,      file.path(proc_dir, "bc_components_annual.csv"))
-write_csv(bc_components_net,  file.path(proc_dir, "bc_components_net.csv"))
-write_csv(bc_lfs,             file.path(proc_dir, "bc_lfs_monthly.csv"))
+write_csv(bc_pop,            file.path(proc_dir, "bc_population_quarterly.csv"))
+write_csv(bc_components_net, file.path(proc_dir, "bc_components_net.csv"))
 
 message("Done. Processed files written to: ", proc_dir)

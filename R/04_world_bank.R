@@ -1,5 +1,5 @@
 # =============================================================================
-# 08_world_bank.R — pull World Bank population indicators for US, China, India
+# 04_world_bank.R — pull World Bank population indicators for US, China, India
 # Indicators:
 #   SP.POP.TOTL              Total population
 #   SP.POP.1564.TO.ZS        Working-age (15-64), % of total
