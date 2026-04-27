@@ -9,15 +9,6 @@
 
 
 
-  <!-- Personal website -->
-  <a href="https://dabingougou.github.io/site/" target="_blank" style="text-decoration: none; color: black;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Globe_icon.svg"
-         alt="Website" style="width: 24px; height: 24px;">
-    Website
-  </a>
-
-
-
   <!-- LinkedIn -->
   <a href="https://www.linkedin.com/in/huibin-chang" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 

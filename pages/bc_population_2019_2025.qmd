@@ -1,6 +1,8 @@
 ---
 title: "How Canada's federal immigration policy reshaped British Columbia's population, 2019–2025"
-author: ["Huibin Chang"]
+author:
+  - name: Huibin Chang
+    url: https://dabingougou.github.io/site/
 date: "2026-04-26"
 format:
   html:
